@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" name="EFM8BB50F16G-A-QFN12" partId="mcu.8051.efm8.bb50.efm8bb50f16g-a-qfn12" version="4.0.0" contextId="%DEFAULT%">
+  <mode name="DefaultMode">
+    <property object="ADC12_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="ADC12_0" propertyId="adc12.control.resolution" value="10-Bit mode"/>
+    <property object="ADC12_0" propertyId="adc12.enable.enableadc" value="Enabled"/>
+    <property object="ADC12_0" propertyId="adc12.inputselection.positiveinputselection" value="ADC0.0 (P0.2)"/>
+    <property object="ADC12_0" propertyId="adc12.throughput.conversiontrackingtimesetting" value="11"/>
+    <property object="ADC12_0" propertyId="adc12.voltagereference.gaincontrol" value="0.5x gain"/>
+    <property object="ADC12_0" propertyId="adc12.voltagereference.selectvoltagereference" value="Internal 1.8V Reference"/>
+    <property object="CIP51_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="CIP51_0" propertyId="cip51.prefetchenginecontrol.flashreadtiming" value="SYSCLK is below 50 MHz"/>
+    <property object="CLOCK_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="CLOCK_0" propertyId="clock.clockgroupcontrol.clockgroupdivider" value="Divide by 2"/>
+    <property object="CLOCK_0" propertyId="clock.clockgroupcontrol.enablesarclock" value="Enable"/>
+    <property object="CLOCK_0" propertyId="clock.clockselect.clocksourcedivider" value="SYSCLK_PREDIV / 1"/>
+    <property object="CLOCK_0" propertyId="clock.clockselect.selectclocksource" value="Internal High Frequency Oscillator 49MHz"/>
+    <property object="CROSSBAR0" propertyId="xbar0.pca0.cex" value="CEX0"/>
+    <property object="CROSSBAR0" propertyId="xbar0.pwm0.channeloutput" value="PWM Ch0, Ch1, and Ch2, enabled"/>
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="INTERRUPT_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="INTERRUPT_0" propertyId="interrupt.extendedinterruptenable1.enableprogrammablecounterarraypca0interrupt" value="Enabled"/>
+    <property object="INTERRUPT_0" propertyId="interrupt.interruptenable.enableallinterrupts" value="Enabled"/>
+    <property object="INTERRUPT_0" propertyId="interrupt.interruptenable.enabletimer2interrupt" value="Enabled"/>
+    <property object="P0.0" propertyId="ports.settings.inputmode" value="Digital"/>
+    <property object="P0.0" propertyId="ports.settings.iomode" value="Digital OpenDrain I/O"/>
+    <property object="P0.0" propertyId="ports.settings.skip" value="Skipped"/>
+    <property object="P0.1" propertyId="ports.settings.inputmode" value="Digital"/>
+    <property object="P0.1" propertyId="ports.settings.iomode" value="Digital Push-Pull Output"/>
+    <property object="P0.1" propertyId="ports.settings.label" value="Q3"/>
+    <property object="P0.1" propertyId="ports.settings.latch" value="Low"/>
+    <property object="P0.1" propertyId="ports.settings.outputmode" value="Push-pull"/>
+    <property object="P0.2" propertyId="ports.settings.label" value="Ambient_S"/>
+    <property object="P0.2" propertyId="ports.settings.skip" value="Skipped"/>
+    <property object="P0.3" propertyId="ports.settings.inputmode" value="Digital"/>
+    <property object="P0.3" propertyId="ports.settings.iomode" value="Digital OpenDrain I/O"/>
+    <property object="P0.3" propertyId="ports.settings.label" value="sLED"/>
+    <property object="P0.3" propertyId="ports.settings.skip" value="Skipped"/>
+    <property object="P0.4" propertyId="ports.settings.inputmode" value="Digital"/>
+    <property object="P0.4" propertyId="ports.settings.iomode" value="Digital Push-Pull Output"/>
+    <property object="P0.4" propertyId="ports.settings.label" value="Q1"/>
+    <property object="P0.4" propertyId="ports.settings.latch" value="Low"/>
+    <property object="P0.4" propertyId="ports.settings.outputmode" value="Push-pull"/>
+    <property object="P0.5" propertyId="ports.settings.inputmode" value="Digital"/>
+    <property object="P0.5" propertyId="ports.settings.iomode" value="Digital Push-Pull Output"/>
+    <property object="P0.5" propertyId="ports.settings.label" value="Q4"/>
+    <property object="P0.5" propertyId="ports.settings.latch" value="Low"/>
+    <property object="P0.5" propertyId="ports.settings.outputmode" value="Push-pull"/>
+    <property object="P0.6" propertyId="ports.settings.inputmode" value="Digital"/>
+    <property object="P0.6" propertyId="ports.settings.iomode" value="Digital OpenDrain I/O"/>
+    <property object="P0.6" propertyId="ports.settings.label" value="But_Sense"/>
+    <property object="P0.6" propertyId="ports.settings.skip" value="Skipped"/>
+    <property object="P0.7" propertyId="ports.settings.inputmode" value="Digital"/>
+    <property object="P0.7" propertyId="ports.settings.iomode" value="Digital Push-Pull Output"/>
+    <property object="P0.7" propertyId="ports.settings.label" value="Q2"/>
+    <property object="P0.7" propertyId="ports.settings.latch" value="Low"/>
+    <property object="P0.7" propertyId="ports.settings.outputmode" value="Push-pull"/>
+    <property object="PBCFG_0" propertyId="pbcfg.settings.enablecrossbar" value="Enabled"/>
+    <property object="PBCFG_0" propertyId="pbcfg.settings.enableiocoexistence" value="Enabled"/>
+    <property object="PCACH_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannel.capturecompareflaginterrupt" value="Enabled"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannel.cex0outputpolarity" value="Inverted"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannel.matchfunction" value="Enabled"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannelcapturecomparemode.enablechannel16bitpulsewidthmodulation" value="Enabled"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannelcapturecomparemode.enablechannelcomparatorfunction" value="Enabled"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannelcapturecomparemode.enablechannelpulsewidthmodulationmoden" value="Enabled"/>
+    <property object="PCACH_0" propertyId="pcach.pcacontrol.channelcapturecomparemode" value="16-Bit pulse width modulator"/>
+    <property object="PCACH_1" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCACH_2" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCA_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCA_0" propertyId="pca.pcacountertimerconfiguration.pcaclockfrequency" value="49.000 MHz"/>
+    <property object="PCA_0" propertyId="pca.pcacountertimerconfiguration.pcaclockfrequencyintegervalue" value="49000000"/>
+    <property object="PCA_0" propertyId="pca.pcacountertimerconfiguration.pcaclockperiod" value="20.000 nS"/>
+    <property object="PCA_0" propertyId="pca.pcacountertimerconfiguration.selectpcacountertimerpulse" value="SYSCLK"/>
+    <property object="PCA_0" propertyId="pca.pcapwmconfiguration.cex0outputpolarity" value="Inverted"/>
+    <property object="PWMCH_0" propertyId="pwmch.channelenable.channelenable" value="Enabled"/>
+    <property object="PWMCH_1" propertyId="pwmch.channelenable.channelenable" value="Enabled"/>
+    <property object="PWMCH_2" propertyId="pwmch.channelenable.channelenable" value="Enabled"/>
+    <property object="PWM_0" propertyId="pwm.pwmclock.clockenable" value="Enable "/>
+    <property object="PWM_0" propertyId="pwm.pwmconfiguration.pwmchannel0enable" value="PWM Ch0 Enable"/>
+    <property object="PWM_0" propertyId="pwm.pwmconfiguration.pwmchannel1enable" value="PWM Ch1 Enable"/>
+    <property object="PWM_0" propertyId="pwm.pwmconfiguration.pwmchannel2enable" value="PWM Ch2 Enable"/>
+    <property object="PWM_0" propertyId="pwm.pwmconfiguration.pwmenable" value="PWM Enabled"/>
+    <property object="PWM_0" propertyId="pwm.pwmconfiguration.pwmsynchronousupdate" value="Ch0, Ch1, Ch2 Synchronous Update"/>
+    <property object="PWM_0" propertyId="pwm.pwmcounter.pwmcounterlimit" value="65535"/>
+    <property object="PWM_0" propertyId="pwm.pwmcounterlimitlsb.pwmcounterlimitlsb" value="255"/>
+    <property object="PWM_0" propertyId="pwm.pwmcounterlimitmsb.pwmcounterlimitmsb" value="255"/>
+    <property object="TIMER01_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="TIMER16_2" propertyId="ABPeripheral.included" value="true"/>
+    <property object="TIMER16_2" propertyId="timer16.control.runcontrol" value="Start"/>
+    <property object="TIMER16_2" propertyId="timer16.control.timerrunningstate" value="Timer is Running"/>
+    <property object="TIMER16_2" propertyId="timer16.initandreloadvalue.targetoverflowfrequency" value="100"/>
+    <property object="TIMER16_2" propertyId="timer16.initandreloadvalue.timerreloadvalue" value="24703"/>
+    <property object="TIMER16_2" propertyId="timer16.reloadhighbyte.reloadhighbyte" value="96"/>
+    <property object="TIMER16_2" propertyId="timer16.reloadlowbyte.reloadlowbyte" value="127"/>
+    <property object="TIMER16_3" propertyId="ABPeripheral.included" value="true"/>
+    <property object="TIMER16_4" propertyId="ABPeripheral.included" value="true"/>
+    <property object="TIMER16_5" propertyId="ABPeripheral.included" value="true"/>
+    <property object="TIMER_SETUP_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="WDT_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="WDT_0" propertyId="wdt.watchdogcontrol.wdtenable" value="Disable"/>
+    <property object="WDT_0" propertyId="wdt.watchdogcontrol.wdtinitialvalue" value="5"/>
+    <property object="WDT_0" propertyId="wdt.watchdogcontrol.wdtperiodactual" value="6.554 s"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+  </modeTransition>
+</device:XMLDevice>

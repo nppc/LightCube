@@ -1,0 +1,142 @@
+C51 COMPILER V9.60.0.0   GEN                                                               10/03/2025 22:32:11 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE GEN
+OBJECT MODULE PLACED IN .\src\gen.OBJ
+COMPILER INVOKED BY: C:\SiliconLabs\SimplicityStudio\v5_2\developer\toolchains\keil_8051\9.60\BIN\C51.exe C:\src\tennp\g
+                    -it\LightCube\Firmware\LightCube\src\gen.c OMF2 SMALL DEBUG OBJECTEXTEND ROM(LARGE) WARNINGLEVEL(2) FLOATFUZZY(3) OPTIMIZ
+                    -E(8,SPEED) DEFINE(DEBUG=1) INTVECTOR(0X0000) INTPROMOTE INCDIR(C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdks/8051/
+                    -v4.3.1//Device/EFM8BB50/inc;C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdks/8051/v4.3.1//Device/shared/si8051Base) P
+                    -RINT(.\src\gen.lst) COND PAGEWIDTH(120) PAGELENGTH(65) OBJECT(.\src\gen.OBJ)
+
+line level    source
+
+   1          #include "main.h"
+   2          
+   3          #define TICKS_PER_MS  (PCA_FREQ / 1000) // Number of PCA ticks per millisecond
+   4          void delay_ms(uint16_t ms)
+   5          {
+   6   1          uint16_t start, elapsed;
+   7   1      
+   8   1          while (ms > 0) {
+   9   2              start = PCA0L;
+  10   2              start |= ((uint16_t)PCA0H << 8);
+  11   2      
+  12   2              do {
+  13   3                  uint16_t now = PCA0L;
+  14   3                  now |= ((uint16_t)PCA0H << 8);
+  15   3      
+  16   3                  // Handle counter wrap-around
+  17   3                  elapsed = now - start;
+  18   3              } while (elapsed < TICKS_PER_MS);
+  19   2      
+  20   2              ms--;
+  21   2          }
+  22   1      }
+  23          
+  24          void set_pwm(uint8_t ch, uint16_t val){
+  25   1        IE_EA = 0;
+  26   1        pwm_channels[ch].u16 = val;
+  27   1        IE_EA = 1;
+  28   1        switch (ch) {
+  29   2      //    case 0:
+  30   2          case 1:
+  31   2            SFRPAGE = 0x10;
+  32   2            if(val==0) PWMCFG2 &= ~(PWMCFG2_CH0EN__BMASK);
+  33   2            PWMCPUDL0 = pwm_channels[ch].u8[1];
+  34   2            PWMCPUDH0 = pwm_channels[ch].u8[0];
+  35   2            if(val!=0) PWMCFG2 |= PWMCFG2_CH0EN__ENABLE;
+  36   2            SFRPAGE = 0x00;
+  37   2            break;
+  38   2          case 2:
+  39   2            SFRPAGE = 0x10;
+  40   2            if(val==0) PWMCFG2 &= ~(PWMCFG2_CH1EN__BMASK);
+  41   2            PWMCPUDL1 = pwm_channels[ch].u8[1];
+  42   2            PWMCPUDH1 = pwm_channels[ch].u8[0];
+  43   2            if(val!=0) PWMCFG2 |= PWMCFG2_CH1EN__ENABLE;
+  44   2            SFRPAGE = 0x00;
+  45   2            break;
+  46   2          case 3:
+  47   2            SFRPAGE = 0x10;
+  48   2            if(val==0) PWMCFG2 &= ~(PWMCFG2_CH2EN__BMASK);
+  49   2            PWMCPUDL2 = pwm_channels[ch].u8[1];
+  50   2            PWMCPUDH2 = pwm_channels[ch].u8[0];
+  51   2            if(val!=0) PWMCFG2 |= PWMCFG2_CH2EN__ENABLE;
+  52   2            SFRPAGE = 0x00;
+C51 COMPILER V9.60.0.0   GEN                                                               10/03/2025 22:32:11 PAGE 2   
+
+  53   2            break;
+  54   2        }
+  55   1      }
+  56          
+  57          static uint16_t seed;
+  58          void rand_set(uint16_t seedval){
+  59   1        seed = seedval;
+  60   1      }
+  61          
+  62          //LCG pseudo random number generator
+  63          uint16_t rand(void) {
+  64   1          seed = (seed * 2053 + 13849) & 0xFFFF;
+  65   1          return seed;
+  66   1      }
+  67          
+  68          uint16_t getRAW_Ambient(void) {
+  69   1          uint16_t adcraw; // raw data from ADC
+  70   1          ADC0CN0_ADBUSY = 1; // start the conversion (32 times 10 bit)
+  71   1          while(!ADC0CN0_ADINT);
+  72   1          adcraw = ADC0;
+  73   1          ADC0CN0_ADINT = 0;
+  74   1          return adcraw;;
+  75   1      }
+  76          
+  77          // Gamma-corrected brightness curve (64 steps, gamma = 2.2)
+  78          const uint16_t code brightness_curve[MAX_STEPS] = {
+  79                  0,     2,     7,    17,    33,    53,    79,   112,
+  80                150,   194,   244,   301,   365,   435,   512,   596,
+  81                687,   785,   891,  1003,  1123,  1250,  1385,  1527,
+  82               1677,  1835,  2000,  2173,  2354,  2543,  2740,  2945,
+  83               3158,  3379,  3609,  3846,  4092,  4347,  4609,  4880,
+  84               5160,  5448,  5745,  6050,  6364,  6686,  7017,  7357,
+  85               7706,  8064,  8430,  8806,  9190,  9583,  9986, 10397,
+  86              10817, 11247, 11685, 12133, 12590, 13057, 13532, 14017,
+  87              14511, 15015, 15528, 16050, 16582, 17123, 17673, 18234,
+  88              18803, 19383, 19972, 20570, 21178, 21796, 22424, 23061,
+  89              23708, 24365, 25032, 25709, 26395, 27091, 27797, 28513,
+  90              29239, 29975, 30721, 31477, 32243, 33019, 33805, 34602,
+  91              35408, 36225, 37051, 37888, 38735, 39592, 40460, 41338,
+  92              42226, 43124, 44033, 44952, 45881, 46821, 47772, 48732,
+  93              49703, 50685, 51677, 52679, 53692, 54716, 55750, 56795,
+  94              57850, 58916, 59992, 61080, 62177, 63286, 64405, 65535
+  95          };
+  96          
+  97          // Gamma-corrected ambient brightness scale (10 levels)
+  98          const uint16_t code ambient_scale[10] = {
+  99              0, 521, 2395, 5845, 11007, 17983, 26857, 37701, 50575, 65535
+ 100          };
+ 101          
+ 102          
+ 103          void setAmbientLevel(uint8_t level) {
+ 104   1          if (level > 9) level = 9;
+ 105   1          ambient_level = level;
+ 106   1      }
+ 107          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    281    ----
+   CONSTANT SIZE    =    276    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2       6
+C51 COMPILER V9.60.0.0   GEN                                                               10/03/2025 22:32:11 PAGE 3   
+
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

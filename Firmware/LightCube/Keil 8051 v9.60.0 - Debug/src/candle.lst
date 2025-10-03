@@ -1,0 +1,115 @@
+C51 COMPILER V9.60.0.0   CANDLE                                                            10/03/2025 21:55:10 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE CANDLE
+OBJECT MODULE PLACED IN .\src\candle.OBJ
+COMPILER INVOKED BY: C:\SiliconLabs\SimplicityStudio\v5_2\developer\toolchains\keil_8051\9.60\BIN\C51.exe C:\src\tennp\g
+                    -it\LightCube\Firmware\LightCube\src\candle.c OMF2 SMALL DEBUG OBJECTEXTEND ROM(LARGE) WARNINGLEVEL(2) FLOATFUZZY(3) OPTI
+                    -MIZE(8,SPEED) DEFINE(DEBUG=1) INTVECTOR(0X0000) INTPROMOTE INCDIR(C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdks/80
+                    -51/v4.3.1//Device/EFM8BB50/inc;C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdks/8051/v4.3.1//Device/shared/si8051Base
+                    -) PRINT(.\src\candle.lst) COND PAGEWIDTH(120) PAGELENGTH(65) OBJECT(.\src\candle.OBJ)
+
+line level    source
+
+   1          #include "main.h"
+   2          #define NUM_LEDS           4
+   3          #define BRIGHTNESS_LEVEL   80
+   4          #define STARTUP_STEP       1
+   5          #define FLICKER_PROB       8
+   6          #define GLOW_EVENT_PROB    16
+   7          #define GLOW_RANGE         25
+   8          
+   9          typedef struct {
+  10              unsigned char current_level;
+  11              unsigned char flicker_timer;
+  12              char flicker_delta;
+  13              char glow_timer;   /* signed: >0 up, <0 down, 0 = idle */
+  14          } LEDState;
+  15          
+  16          static LEDState leds[NUM_LEDS];
+  17          static bit startup_done;
+  18          
+  19          void candle_init(void)
+  20          {
+  21   1          unsigned char i;
+  22   1          for (i = 0; i < NUM_LEDS; ++i) {
+  23   2              leds[i].current_level = 0;
+  24   2              leds[i].flicker_timer = 0;
+  25   2              leds[i].flicker_delta = 0;
+  26   2              leds[i].glow_timer = 0;
+  27   2              set_pwm(i, 0);
+  28   2          }
+  29   1          startup_done = 0;
+  30   1      }
+  31          
+  32          void candle_tick(void)
+  33          {
+  34   1          unsigned char i;
+  35   1          for (i = 0; i < NUM_LEDS; ++i) {
+  36   2              LEDState *led = &leds[i];
+  37   2              char offset = 0;
+  38   2      
+  39   2              if (!startup_done) {
+  40   3                  if (led->current_level < BRIGHTNESS_LEVEL) {
+  41   4                      led->current_level += STARTUP_STEP;
+  42   4                      if (led->current_level > BRIGHTNESS_LEVEL)
+  43   4                          led->current_level = BRIGHTNESS_LEVEL;
+  44   4                  }
+  45   3              } else if (led->flicker_timer) {
+  46   3                  led->flicker_timer--;
+  47   3                  offset = (led->flicker_timer < led->flicker_delta) ?
+  48   3                              led->flicker_timer :
+  49   3                              (2 * led->flicker_delta - led->flicker_timer);
+  50   3              } else if ((rand() & 0xFF) < FLICKER_PROB) {
+  51   3                  led->flicker_delta = (char)((rand() & 7) + 1);
+  52   3                  led->flicker_timer = (unsigned char)(led->flicker_delta << 1);
+C51 COMPILER V9.60.0.0   CANDLE                                                            10/03/2025 21:55:10 PAGE 2   
+
+  53   3              } else if (led->glow_timer) {
+  54   3                  if (led->glow_timer > 0) {
+  55   4                      led->glow_timer--;
+  56   4                      if (led->current_level < BRIGHTNESS_LEVEL + GLOW_RANGE)
+  57   4                          led->current_level++;
+  58   4                      else
+  59   4                          led->glow_timer = -(led->glow_timer); /* flip direction */
+  60   4                  } else {
+  61   4                      led->glow_timer++;
+  62   4                      if (led->current_level > BRIGHTNESS_LEVEL - GLOW_RANGE)
+  63   4                          led->current_level--;
+  64   4                      else
+  65   4                          led->glow_timer = -(led->glow_timer); /* flip direction */
+  66   4                  }
+  67   3              } else if ((rand() & 0xFF) < GLOW_EVENT_PROB) {
+  68   3                  /* pick direction by sign */
+  69   3                  char t = (char)(30 + (rand() & 0x1F));
+  70   3                  led->glow_timer = (rand() & 1) ? t : -t;
+  71   3              }
+  72   2      
+  73   2              set_pwm(i, brightness_curve[led->current_level + offset]);
+  74   2          }
+  75   1      
+  76   1          if (!startup_done) {
+  77   2              startup_done = 1;
+  78   2              for (i = 0; i < NUM_LEDS; ++i)
+  79   2                  if (leds[i].current_level < BRIGHTNESS_LEVEL)
+  80   2                      startup_done = 0;
+  81   2          }
+  82   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    566    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     16       7
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
