@@ -41,6 +41,7 @@ typedef union
    } U16_U8;
 
 extern bit effect_trigger;
+extern bit poweroff_trigger;
 
 extern void delay_ms(uint16_t ms);
 

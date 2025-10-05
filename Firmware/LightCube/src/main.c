@@ -4,6 +4,9 @@
 //-----------------------------------------------------------------------------
 #include "main.h"
 #include "InitDevice.h"
+#include "status_led.h"
+#include "button.h"
+#include "pwm.h"
 #include "candle.h"
 
 //volatile uint16_t tmp_millis;
@@ -13,6 +16,7 @@ volatile U16_U8 pwm_channels[4];
 
 bit effect_trigger = 0;
 uint8_t ambient_level = 9; // Default to max brightness
+bit poweroff_trigger = 0;  // Set to 1 when power-off should begin
 
 
 //-----------------------------------------------------------------------------
@@ -52,20 +56,14 @@ int main(void) {
 
   IE_EA = 1;
 
-
-  { // INIT LED Sequence
-    uint8_t i;
-    for(i=0;i<3;i++){
-      PIN_LED = 0;
-      delay_ms(200);
-      PIN_LED = 1;
-      delay_ms(200);
-     }
-  }
-
   rand_set(getRAW_Ambient()); // set initial seed for rand
 
   PIN_BUT = 1;
+
+  PIN_LED = 0;
+  while(PIN_BUT); // wait until button is depressed
+
+  led_cmd = LED_CMD_INIT;
 
 //  setAmbientLevel(7);
   candle_init();
@@ -76,36 +74,27 @@ int main(void) {
 
       if(effect_trigger){
           effect_trigger = 0;
-          //Efect4_routine();
           candle_tick();
+          process_button();
+          update_status_led(led_cmd);
       }
 
-
-      if(PIN_BUT){
-          uint8_t i;
-          bit shutdown = 1;
-          PIN_LED = 0;
-          delay_ms(200);
-          for(i=0;i<12;i++){
-              delay_ms(100);
-              if(!PIN_BUT) {
-                  shutdown = 0;
-                  break;
+      if (poweroff_trigger) {
+          bit fade_finished = 0;
+          PIN_LED = 1;
+          start_poweroff_sequence();
+          while(!fade_finished){
+              if(effect_trigger){
+                  effect_trigger = 0;
+                  fade_finished = process_fadeout();
               }
           }
-          PIN_LED = 1;
-          if(shutdown){
-              set_pwm(0, 0);
-              set_pwm(1, 0);
-              set_pwm(2, 0);
-              set_pwm(3, 0);
-              while(PIN_BUT);
-              delay_ms(300);
-              PIN_BUT = 0;
-              //PCON1 = PCON1_PINRETAIN__RETAIN;
-              REG0CN = REG0CN_STOPCF__SHUTDOWN;
-              PCON0 = PCON0_STOP__STOP;
-          }
+          // go to powerdown
+          while(PIN_BUT);
+          delay_ms(100);
+          PIN_BUT = 0;
+          REG0CN = REG0CN_STOPCF__SHUTDOWN;
+          PCON0 = PCON0_STOP__STOP;
       }
 
   }

@@ -1,0 +1,106 @@
+C51 COMPILER V9.60.0.0   STATUS_LED                                                        10/05/2025 20:50:30 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE STATUS_LED
+OBJECT MODULE PLACED IN .\src\status_led.OBJ
+COMPILER INVOKED BY: C:\SiliconLabs\SimplicityStudio\v5_2\developer\toolchains\keil_8051\9.60\BIN\C51.exe C:\src\tennp\g
+                    -it\LightCube\Firmware\LightCube\src\status_led.c OMF2 SMALL DEBUG OBJECTEXTEND ROM(LARGE) WARNINGLEVEL(2) FLOATFUZZY(3) 
+                    -OPTIMIZE(8,SPEED) DEFINE(DEBUG=1) INTVECTOR(0X0000) INTPROMOTE INCDIR(C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdk
+                    -s/8051/v4.3.1//Device/EFM8BB50/inc;C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdks/8051/v4.3.1//Device/shared/si8051
+                    -Base) PRINT(.\src\status_led.lst) COND PAGEWIDTH(120) PAGELENGTH(65) OBJECT(.\src\status_led.OBJ)
+
+line level    source
+
+   1          /*
+   2           * statusLed.c
+   3           *
+   4           *  Created on: Oct 5, 2025
+   5           *      Author: Pavel
+   6           */
+   7          
+   8          #include "main.h"
+   9          #include "status_led.h"
+  10          #include "button.h"
+  11          
+  12          uint8_t init_blink_count = 0;
+  13          uint16_t init_blink_timer = 0;
+  14          
+  15          uint16_t poweroff_timer = 0;
+  16          bit poweroff_active = 0;
+  17          
+  18          LedCommand led_cmd;
+  19          
+  20          void update_status_led(LedCommand cmd) {
+  21   1          static uint8_t init_blink_count = 0;
+  22   1          static uint16_t init_blink_timer = 0;
+  23   1          static uint16_t poweroff_timer = 0;
+  24   1          static bit poweroff_active = 0;
+  25   1      
+  26   1          switch (cmd) {
+  27   2              case LED_CMD_INIT:
+  28   2                  if (init_blink_timer == 0) {
+  29   3                      if (init_blink_count < 11) {
+  30   4                          PIN_LED = !PIN_LED;
+  31   4                          init_blink_timer = (PIN_LED == 0) ? 10 : 40;
+  32   4                          init_blink_count++;
+  33   4                      } else {
+  34   4                          PIN_LED = 1;
+  35   4                          led_cmd = LED_CMD_NONE;
+  36   4                      }
+  37   3                  } else {
+  38   3                      init_blink_timer--;
+  39   3                  }
+  40   2                  break;
+  41   2      
+  42   2              case LED_CMD_BUTTON_PRESS:
+  43   2                  PIN_LED = 0;  // LED ON
+  44   2                  break;
+  45   2      
+  46   2              case LED_CMD_POWEROFF:
+  47   2                  if (!poweroff_active) {
+  48   3                      poweroff_timer = 0;
+  49   3                      poweroff_active = 1;
+  50   3                      PIN_LED = 0;  // LED ON
+  51   3                  } else {
+  52   3                      poweroff_timer++;
+C51 COMPILER V9.60.0.0   STATUS_LED                                                        10/05/2025 20:50:30 PAGE 2   
+
+  53   3                      if (poweroff_timer >= BUTTON_LONG_PRESS_TIME) {
+  54   4                          PIN_LED = 1;  // LED OFF
+  55   4                          poweroff_active = 0;
+  56   4                          led_cmd = LED_CMD_NONE;
+  57   4                          // Signal that power-off should begin
+  58   4                          poweroff_trigger = 1;
+  59   4                      }
+  60   3                  }
+  61   2                  break;
+  62   2      
+  63   2              case LED_CMD_SHORTPRESS:
+  64   2                  PIN_LED = 1;  // LED OFF
+  65   2                  led_cmd = LED_CMD_NONE;
+  66   2                  break;
+  67   2      
+  68   2              case LED_CMD_NONE:
+  69   2              default:
+  70   2                  PIN_LED = 1;  // LED OFF
+  71   2                  break;
+  72   2          }
+  73   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    113    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     11    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      2    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
