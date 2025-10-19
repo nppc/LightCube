@@ -21,7 +21,12 @@ void delay_ms(uint16_t ms)
     }
 }
 
-void set_pwm(uint8_t ch, uint16_t val){
+void set_pwm(uint8_t ch, uint16_t val, bit apply_brightness){
+  if(apply_brightness){
+      //val = ((uint32_t)val * apply_brightness) / 65535;
+      val = val / 4;
+  }
+
   IE_EA = 0;
   pwm_channels[ch].u16 = val;
   IE_EA = 1;
@@ -100,8 +105,9 @@ const uint16_t code ambient_scale[10] = {
 };
 
 
-void setAmbientLevel(uint8_t level) {
+void setBrightnessLevel(uint8_t level) {
     if (level > 9) level = 9;
     ambient_level = level;
+    brightness_correction = ambient_scale[level];
 }
 

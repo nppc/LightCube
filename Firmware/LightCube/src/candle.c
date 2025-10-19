@@ -24,7 +24,7 @@ void candle_init(void)
         leds[i].flicker_timer = 0;
         leds[i].flicker_delta = 0;
         leds[i].glow_timer = 0;
-        set_pwm(i, 0);
+        set_pwm(i, 0, 1);
     }
     startup_done = 0;
 }
@@ -70,7 +70,7 @@ void candle_tick(void)
             led->glow_timer = (rand() & 1) ? t : -t;
         }
 
-        set_pwm(i, brightness_curve[led->current_level + offset]);
+        set_pwm(i, brightness_curve[led->current_level + offset], 1);
     }
 
     if (!startup_done) {

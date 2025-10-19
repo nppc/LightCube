@@ -16,6 +16,7 @@ volatile U16_U8 pwm_channels[4];
 
 bit effect_trigger = 0;
 uint8_t ambient_level = 9; // Default to max brightness
+uint16_t brightness_correction;
 bit poweroff_trigger = 0;  // Set to 1 when power-off should begin
 
 
@@ -49,10 +50,10 @@ int main(void) {
 
   PCA0CN0_CR = PCA0CN0_CR__RUN; // Start PCA0 after config is done
 
-  set_pwm(0, 0);
-  set_pwm(1, 0);
-  set_pwm(2, 0);
-  set_pwm(3, 0);
+  set_pwm(0, 0, 0);
+  set_pwm(1, 0, 0);
+  set_pwm(2, 0, 0);
+  set_pwm(3, 0, 0);
 
   IE_EA = 1;
 
@@ -65,7 +66,7 @@ int main(void) {
 
   led_cmd = LED_CMD_INIT;
 
-//  setAmbientLevel(7);
+  setBrightnessLevel(5);
   candle_init();
 
 

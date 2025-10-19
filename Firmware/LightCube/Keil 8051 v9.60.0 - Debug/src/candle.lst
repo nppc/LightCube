@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   CANDLE                                                            10/05/2025 20:50:29 PAGE 1   
+C51 COMPILER V9.60.0.0   CANDLE                                                            10/19/2025 22:03:41 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE CANDLE
@@ -37,7 +37,7 @@ line level    source
   24   2              leds[i].flicker_timer = 0;
   25   2              leds[i].flicker_delta = 0;
   26   2              leds[i].glow_timer = 0;
-  27   2              set_pwm(i, 0);
+  27   2              set_pwm(i, 0, 1);
   28   2          }
   29   1          startup_done = 0;
   30   1      }
@@ -63,7 +63,7 @@ line level    source
   50   3              } else if ((rand() & 0xFF) < FLICKER_PROB) {
   51   3                  led->flicker_delta = (char)((rand() & 7) + 1);
   52   3                  led->flicker_timer = (unsigned char)(led->flicker_delta << 1);
-C51 COMPILER V9.60.0.0   CANDLE                                                            10/05/2025 20:50:29 PAGE 2   
+C51 COMPILER V9.60.0.0   CANDLE                                                            10/19/2025 22:03:41 PAGE 2   
 
   53   3              } else if (led->glow_timer) {
   54   3                  if (led->glow_timer > 0) {
@@ -85,7 +85,7 @@ line level    source
   70   3                  led->glow_timer = (rand() & 1) ? t : -t;
   71   3              }
   72   2      
-  73   2              set_pwm(i, brightness_curve[led->current_level + offset]);
+  73   2              set_pwm(i, brightness_curve[led->current_level + offset], 1);
   74   2          }
   75   1      
   76   1          if (!startup_done) {
@@ -98,7 +98,7 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    566    ----
+   CODE SIZE        =    570    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

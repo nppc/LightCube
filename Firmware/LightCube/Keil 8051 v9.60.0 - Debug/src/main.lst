@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   MAIN                                                              10/05/2025 20:51:34 PAGE 1   
+C51 COMPILER V9.60.0.0   MAIN                                                              10/19/2025 22:13:03 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
@@ -29,73 +29,73 @@ line level    source
   16          
   17          bit effect_trigger = 0;
   18          uint8_t ambient_level = 9; // Default to max brightness
-  19          bit poweroff_trigger = 0;  // Set to 1 when power-off should begin
-  20          
+  19          uint16_t brightness_correction;
+  20          bit poweroff_trigger = 0;  // Set to 1 when power-off should begin
   21          
-  22          //-----------------------------------------------------------------------------
-  23          // SiLabs_Startup() Routine
-  24          // ----------------------------------------------------------------------------
-  25          // This function is called immediately after reset, before the initialization
-  26          // code is run in SILABS_STARTUP.A51 (which runs before main() ). This is a
-  27          // useful place to disable the watchdog timer, which is enable by default
-  28          // and may trigger before main() in some instances.
-  29          //-----------------------------------------------------------------------------
-  30          void SiLabs_Startup(void) {
-  31   1        // $[SiLabs Startup]
-  32   1        // [SiLabs Startup]$
-  33   1      }
-  34          
-  35          //-----------------------------------------------------------------------------
-  36          // main() Routine
-  37          // ----------------------------------------------------------------------------
-  38          int main(void) {
-  39   1        enter_DefaultMode_from_RESET();
-  40   1      
-  41   1          SFRPAGE = 0x10;
-  42   1          PWMCFG0 = PWMCFG0_PWMMODE__EDGE | PWMCFG0_PWMCLKEN__ENABLE | PWMCFG0_SYNCUPD__CH0CH1CH2;
-  43   1      //    PWMCFG1 = PWMCFG1_DTIEN__ENABLE |
-  44   1          PWMCFG2 = PWMCFG2_CNTRZERO__ZERO;
-  45   1          PWMLIML = 0xFF;
-  46   1          PWMLIMH = 0xFF;
-  47   1          PWMCFG1 = PWMCFG1_PWMLTSYS__GTSYSCK | PWMCFG1_PWMEN__ENABLE; // start PWM0
-  48   1          SFRPAGE = 0x00;
-  49   1      
-  50   1        PCA0CN0_CR = PCA0CN0_CR__RUN; // Start PCA0 after config is done
-  51   1      
-  52   1        set_pwm(0, 0);
-C51 COMPILER V9.60.0.0   MAIN                                                              10/05/2025 20:51:34 PAGE 2   
+  22          
+  23          //-----------------------------------------------------------------------------
+  24          // SiLabs_Startup() Routine
+  25          // ----------------------------------------------------------------------------
+  26          // This function is called immediately after reset, before the initialization
+  27          // code is run in SILABS_STARTUP.A51 (which runs before main() ). This is a
+  28          // useful place to disable the watchdog timer, which is enable by default
+  29          // and may trigger before main() in some instances.
+  30          //-----------------------------------------------------------------------------
+  31          void SiLabs_Startup(void) {
+  32   1        // $[SiLabs Startup]
+  33   1        // [SiLabs Startup]$
+  34   1      }
+  35          
+  36          //-----------------------------------------------------------------------------
+  37          // main() Routine
+  38          // ----------------------------------------------------------------------------
+  39          int main(void) {
+  40   1        enter_DefaultMode_from_RESET();
+  41   1      
+  42   1          SFRPAGE = 0x10;
+  43   1          PWMCFG0 = PWMCFG0_PWMMODE__EDGE | PWMCFG0_PWMCLKEN__ENABLE | PWMCFG0_SYNCUPD__CH0CH1CH2;
+  44   1      //    PWMCFG1 = PWMCFG1_DTIEN__ENABLE |
+  45   1          PWMCFG2 = PWMCFG2_CNTRZERO__ZERO;
+  46   1          PWMLIML = 0xFF;
+  47   1          PWMLIMH = 0xFF;
+  48   1          PWMCFG1 = PWMCFG1_PWMLTSYS__GTSYSCK | PWMCFG1_PWMEN__ENABLE; // start PWM0
+  49   1          SFRPAGE = 0x00;
+  50   1      
+  51   1        PCA0CN0_CR = PCA0CN0_CR__RUN; // Start PCA0 after config is done
+  52   1      
+C51 COMPILER V9.60.0.0   MAIN                                                              10/19/2025 22:13:03 PAGE 2   
 
-  53   1        set_pwm(1, 0);
-  54   1        set_pwm(2, 0);
-  55   1        set_pwm(3, 0);
-  56   1      
-  57   1        IE_EA = 1;
-  58   1      
-  59   1        rand_set(getRAW_Ambient()); // set initial seed for rand
-  60   1      
-  61   1        PIN_BUT = 1;
-  62   1      
-  63   1        PIN_LED = 0;
-  64   1        while(PIN_BUT); // wait until button is depressed
-  65   1      
-  66   1        led_cmd = LED_CMD_INIT;
-  67   1      
-  68   1      //  setAmbientLevel(7);
-  69   1        candle_init();
-  70   1      
+  53   1        set_pwm(0, 0, 0);
+  54   1        set_pwm(1, 0, 0);
+  55   1        set_pwm(2, 0, 0);
+  56   1        set_pwm(3, 0, 0);
+  57   1      
+  58   1        IE_EA = 1;
+  59   1      
+  60   1        rand_set(getRAW_Ambient()); // set initial seed for rand
+  61   1      
+  62   1        PIN_BUT = 1;
+  63   1      
+  64   1        PIN_LED = 0;
+  65   1        while(PIN_BUT); // wait until button is depressed
+  66   1      
+  67   1        led_cmd = LED_CMD_INIT;
+  68   1      
+  69   1        setBrightnessLevel(5);
+  70   1        candle_init();
   71   1      
-  72   1        while(1){
-  73   2            uint16_t ambient = getRAW_Ambient();
-  74   2      
-  75   2            if(effect_trigger){
-  76   3                effect_trigger = 0;
-  77   3                candle_tick();
-  78   3                process_button();
-  79   3                update_status_led(led_cmd);
-  80   3            }
-  81   2      
-  82   2            if (poweroff_trigger) {
-  83   3                // Call your external power-off routine here
+  72   1      
+  73   1        while(1){
+  74   2            uint16_t ambient = getRAW_Ambient();
+  75   2      
+  76   2            if(effect_trigger){
+  77   3                effect_trigger = 0;
+  78   3                candle_tick();
+  79   3                process_button();
+  80   3                update_status_led(led_cmd);
+  81   3            }
+  82   2      
+  83   2            if (poweroff_trigger) {
   84   3                bit fade_finished = 0;
   85   3                PIN_LED = 1;
   86   3                start_poweroff_sequence();
@@ -105,31 +105,32 @@ line level    source
   90   5                        fade_finished = process_fadeout();
   91   5                    }
   92   4                }
-  93   3                while(PIN_BUT);
-  94   3                delay_ms(100);
-  95   3                PIN_BUT = 0;
-  96   3                REG0CN = REG0CN_STOPCF__SHUTDOWN;
-  97   3                PCON0 = PCON0_STOP__STOP;
-  98   3            }
-  99   2      
- 100   2        }
- 101   1      
- 102   1      }
+  93   3                // go to powerdown
+  94   3                while(PIN_BUT);
+  95   3                delay_ms(100);
+  96   3                PIN_BUT = 0;
+  97   3                REG0CN = REG0CN_STOPCF__SHUTDOWN;
+  98   3                PCON0 = PCON0_STOP__STOP;
+  99   3            }
+ 100   2      
+ 101   2        }
+ 102   1      
+ 103   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    146    ----
+   CODE SIZE        =    159    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =      9       2
+   DATA SIZE        =     11       2
    IDATA SIZE       =   ----    ----
    BIT SIZE         =      2       1
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
-   XDATA CONST SIZE =   ----    ----
-C51 COMPILER V9.60.0.0   MAIN                                                              10/05/2025 20:51:34 PAGE 3   
+C51 COMPILER V9.60.0.0   MAIN                                                              10/19/2025 22:13:03 PAGE 3   
 
+   XDATA CONST SIZE =   ----    ----
    FAR CONST SIZE   =   ----    ----
 END OF MODULE INFORMATION.
 

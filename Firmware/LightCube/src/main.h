@@ -45,16 +45,17 @@ extern bit poweroff_trigger;
 
 extern void delay_ms(uint16_t ms);
 
-extern void set_pwm(uint8_t ch, uint16_t val);
+extern void set_pwm(uint8_t ch, uint16_t val, bit apply_brightness);
 
 extern uint16_t getRAW_Ambient(void);
 
 extern void rand_set(uint16_t seedval);
 extern uint16_t rand(void);
 
-extern void setAmbientLevel(uint8_t level);
+extern void setBrightnessLevel(uint8_t level);
 
 extern uint8_t ambient_level;
+extern uint16_t brightness_correction;
 
 const uint16_t code brightness_curve[];
 const uint16_t code ambient_scale[];

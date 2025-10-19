@@ -35,7 +35,7 @@ bit process_fadeout(void) {
             uint16_t new_pwm = (current_pwm > pwm_fade_step[i])
                                ? (current_pwm - pwm_fade_step[i])
                                : 0;
-            set_pwm(i, new_pwm);  // Update via setter
+            set_pwm(i, new_pwm, 0);  // Update via setter
         }
 
         if (pwm_channels[i].u16 > 0) {

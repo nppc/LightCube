@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   STATUS_LED                                                        10/05/2025 20:50:30 PAGE 1   
+C51 COMPILER V9.60.0.0   STATUS_LED                                                        10/19/2025 22:03:42 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE STATUS_LED
@@ -63,7 +63,7 @@ line level    source
   50   3                      PIN_LED = 0;  // LED ON
   51   3                  } else {
   52   3                      poweroff_timer++;
-C51 COMPILER V9.60.0.0   STATUS_LED                                                        10/05/2025 20:50:30 PAGE 2   
+C51 COMPILER V9.60.0.0   STATUS_LED                                                        10/19/2025 22:03:42 PAGE 2   
 
   53   3                      if (poweroff_timer >= BUTTON_LONG_PRESS_TIME) {
   54   4                          PIN_LED = 1;  // LED OFF

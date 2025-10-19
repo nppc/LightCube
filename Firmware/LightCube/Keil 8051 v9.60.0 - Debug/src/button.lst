@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   BUTTON                                                            10/05/2025 20:50:29 PAGE 1   
+C51 COMPILER V9.60.0.0   BUTTON                                                            10/19/2025 22:03:41 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE BUTTON
@@ -63,7 +63,7 @@ line level    source
   50   3                      // Released before long press
   51   3                      led_cmd = LED_CMD_SHORTPRESS;
   52   3                      button_state = BUTTON_IDLE;
-C51 COMPILER V9.60.0.0   BUTTON                                                            10/05/2025 20:50:29 PAGE 2   
+C51 COMPILER V9.60.0.0   BUTTON                                                            10/19/2025 22:03:41 PAGE 2   
 
   53   3                  }
   54   2                  break;
