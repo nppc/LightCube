@@ -1,6 +1,6 @@
 #include "main.h"
 #define NUM_LEDS           4
-#define BRIGHTNESS_LEVEL   80
+#define BRIGHTNESS_LEVEL   75
 #define STARTUP_STEP       1
 #define FLICKER_PROB       8
 #define GLOW_EVENT_PROB    16

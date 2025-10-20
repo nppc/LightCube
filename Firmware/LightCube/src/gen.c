@@ -23,8 +23,7 @@ void delay_ms(uint16_t ms)
 
 void set_pwm(uint8_t ch, uint16_t val, bit apply_brightness){
   if(apply_brightness){
-      //val = ((uint32_t)val * apply_brightness) / 65535;
-      val = val / 4;
+      val = (uint32_t)((uint32_t)val * brightness_correction) / 65535;
   }
 
   IE_EA = 0;

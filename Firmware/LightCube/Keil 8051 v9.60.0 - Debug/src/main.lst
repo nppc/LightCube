@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   MAIN                                                              10/19/2025 22:13:03 PAGE 1   
+C51 COMPILER V9.60.0.0   MAIN                                                              10/20/2025 19:42:17 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
@@ -28,7 +28,7 @@ line level    source
   15          volatile U16_U8 pwm_channels[4];
   16          
   17          bit effect_trigger = 0;
-  18          uint8_t ambient_level = 9; // Default to max brightness
+  18          uint8_t ambient_level; // Default to max brightness
   19          uint16_t brightness_correction;
   20          bit poweroff_trigger = 0;  // Set to 1 when power-off should begin
   21          
@@ -63,7 +63,7 @@ line level    source
   50   1      
   51   1        PCA0CN0_CR = PCA0CN0_CR__RUN; // Start PCA0 after config is done
   52   1      
-C51 COMPILER V9.60.0.0   MAIN                                                              10/19/2025 22:13:03 PAGE 2   
+C51 COMPILER V9.60.0.0   MAIN                                                              10/20/2025 19:42:17 PAGE 2   
 
   53   1        set_pwm(0, 0, 0);
   54   1        set_pwm(1, 0, 0);
@@ -128,7 +128,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    BIT SIZE         =      2       1
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
-C51 COMPILER V9.60.0.0   MAIN                                                              10/19/2025 22:13:03 PAGE 3   
+C51 COMPILER V9.60.0.0   MAIN                                                              10/20/2025 19:42:17 PAGE 3   
 
    XDATA CONST SIZE =   ----    ----
    FAR CONST SIZE   =   ----    ----

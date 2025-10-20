@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   CANDLE                                                            10/19/2025 22:03:41 PAGE 1   
+C51 COMPILER V9.60.0.0   CANDLE                                                            10/20/2025 19:40:00 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE CANDLE
@@ -13,7 +13,7 @@ line level    source
 
    1          #include "main.h"
    2          #define NUM_LEDS           4
-   3          #define BRIGHTNESS_LEVEL   80
+   3          #define BRIGHTNESS_LEVEL   75
    4          #define STARTUP_STEP       1
    5          #define FLICKER_PROB       8
    6          #define GLOW_EVENT_PROB    16
@@ -63,7 +63,7 @@ line level    source
   50   3              } else if ((rand() & 0xFF) < FLICKER_PROB) {
   51   3                  led->flicker_delta = (char)((rand() & 7) + 1);
   52   3                  led->flicker_timer = (unsigned char)(led->flicker_delta << 1);
-C51 COMPILER V9.60.0.0   CANDLE                                                            10/19/2025 22:03:41 PAGE 2   
+C51 COMPILER V9.60.0.0   CANDLE                                                            10/20/2025 19:40:00 PAGE 2   
 
   53   3              } else if (led->glow_timer) {
   54   3                  if (led->glow_timer > 0) {

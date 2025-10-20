@@ -15,7 +15,7 @@
 volatile U16_U8 pwm_channels[4];
 
 bit effect_trigger = 0;
-uint8_t ambient_level = 9; // Default to max brightness
+uint8_t ambient_level; // Default to max brightness
 uint16_t brightness_correction;
 bit poweroff_trigger = 0;  // Set to 1 when power-off should begin
 
