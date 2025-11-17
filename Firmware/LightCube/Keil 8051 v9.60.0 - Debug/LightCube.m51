@@ -1,11 +1,11 @@
-LX51 LINKER/LOCATER V4.66.97.0                                                          10/20/2025  19:56:58  PAGE 1
+LX51 LINKER/LOCATER V4.66.97.0                                                          11/17/2025  16:23:11  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
-C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\BIN\LX51.EXE ./src/main.OBJ, ./src/InitDevice.O
->> BJ, ./src/Interrupts.OBJ, ./src/candle.OBJ, ./src/gen.OBJ, ./src/button.OBJ, ./src/pwm.OBJ, ./src/status_led.OBJ TO L
->> IGHTCUBE.OMF.CRBUILD REMOVEUNUSED PRINT (.\LightCube.m51) PAGEWIDTH (120) PAGELENGTH (65) CLASSES (ECODE (C:0X0-C:0X3
->> 7FE), HCONST (C:0X0-C:0X37FE), XDATA (X:0X0-X:0XFF), HDATA (X:0X0-X:0XFF))
+C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\BIN\LX51.EXE ./src/main.OBJ, ./src/InitDevice.OBJ
+>> , ./src/Interrupts.OBJ, ./src/candle.OBJ, ./src/gen.OBJ, ./src/button.OBJ, ./src/pwm.OBJ, ./src/status_led.OBJ TO LIG
+>> HTCUBE.OMF.CRBUILD REMOVEUNUSED PRINT (.\LightCube.m51) PAGEWIDTH (120) PAGELENGTH (65) CLASSES (ECODE (C:0X0-C:0X37F
+>> E), HCONST (C:0X0-C:0X37FE), XDATA (X:0X0-X:0XFF), HDATA (X:0X0-X:0XFF))
 
 
 CPU MODE:     8051 MODE
@@ -29,31 +29,31 @@ INPUT MODULES INCLUDED:
          COMMENT TYPE 0: C51 V9.60.0.0
   ./src/status_led.OBJ (STATUS_LED)
          COMMENT TYPE 0: C51 V9.60.0.0
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C_STARTUP)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C_STARTUP)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CLDPTR)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CLDPTR)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CLDOPTR)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CLDOPTR)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CILDPTR)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CILDPTR)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CILDOPTR)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CILDOPTR)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CSTPTR)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CSTPTR)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CSTOPTR)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?CSTOPTR)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?IMUL)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?IMUL)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?UIDIV)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?UIDIV)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?ULDIV)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?ULDIV)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?ULCMP)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?ULCMP)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?LIMUL)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C?LIMUL)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-  C:\SILICONLABS\SIMPLICITYSTUDIO\V5_2\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C_INIT)
+  C:\SILICONLABS\SIMPLICITYSTUDIO\V5\DEVELOPER\TOOLCHAINS\KEIL_8051\9.60\LIB\C51S.LIB (?C_INIT)
          COMMENT TYPE 1: A51 / ASM51 Assembler
 
 
@@ -64,12 +64,12 @@ BASE        START       END         USED      MEMORY CLASS
 C:000000H   C:000000H   C:0037FEH             ECODE
 C:000000H   C:000000H   C:0037FEH             HCONST
 X:000000H   X:000000H   X:0000FFH             XDATA
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 2
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 2
 
 
 X:000000H   X:000000H   X:0000FFH             HDATA
-C:000000H   C:000000H   C:00FFFFH   0009C1H   CODE
-I:000000H   I:000000H   I:00007FH   000045H   DATA
+C:000000H   C:000000H   C:00FFFFH   0009C2H   CODE
+I:000000H   I:000000H   I:00007FH   000046H   DATA
 I:000020H.0 I:000020H.0 I:00002FH.7 000001H.0 BIT
 C:000000H   C:000000H   C:00FFFFH   000114H   CONST
 I:000000H   I:000000H   I:0000FFH   000001H   IDATA
@@ -91,10 +91,10 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 000020H.7 000020H.7 000000H.1 BIT    UNIT     BIT            ?BI?CANDLE
 000021H   00002BH   00000BH   BYTE   UNIT     DATA           ?DT?MAIN
 00002CH   000036H   00000BH   BYTE   UNIT     DATA           ?DT?STATUS_LED
-000037H   00003FH   000009H   BYTE   UNIT     DATA           _DATA_GROUP_
-000040H   000043H   000004H   BYTE   UNIT     DATA           ?DT?BUTTON
-000044H   000045H   000002H   BYTE   UNIT     DATA           ?DT?GEN
-000046H   000046H   000001H   BYTE   UNIT     IDATA          ?STACK
+000037H   000040H   00000AH   BYTE   UNIT     DATA           _DATA_GROUP_
+000041H   000044H   000004H   BYTE   UNIT     DATA           ?DT?BUTTON
+000045H   000046H   000002H   BYTE   UNIT     DATA           ?DT?GEN
+000047H   000047H   000001H   BYTE   UNIT     IDATA          ?STACK
 
 * * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
 000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
@@ -105,36 +105,36 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 000057H   00005AH   000004H   ---    ---      **GAP**
 00005BH   00005DH   000003H   BYTE   OFFS..   CODE           ?INTERRUPTS?0005B
 00005EH   00029FH   000242H   BYTE   UNIT     CODE           ?C?LIB_CODE
-0002A0H   00048FH   0001F0H   BYTE   UNIT     CODE           ?PR?CANDLE_TICK?CANDLE
-000490H   00053DH   0000AEH   BYTE   UNIT     CODE           ?PR?_SET_PWM?GEN
-00053EH   0005DBH   00009EH   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
-0005DCH   000667H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
-000668H   0006DFH   000078H   BYTE   UNIT     CODE           ?PR?PROCESS_FADEOUT?PWM
-0006E0H   000750H   000071H   BYTE   UNIT     CODE           ?PR?_UPDATE_STATUS_LED?STATUS_LED
-000751H   0007B2H   000062H   BYTE   UNIT     CODE           ?PR?PROCESS_BUTTON?BUTTON
-0007B3H   000807H   000055H   BYTE   UNIT     CODE           ?PR?_DELAY_MS?GEN
-000808H   00085CH   000055H   BYTE   UNIT     CODE           ?PR?START_POWEROFF_SEQUENCE?PWM
-00085DH   0008A7H   00004BH   BYTE   UNIT     CODE           ?PR?WDT_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-0008A8H   0008F1H   00004AH   BYTE   UNIT     CODE           ?PR?CANDLE_INIT?CANDLE
-0008F2H   000915H   000024H   BYTE   UNIT     CODE           ?PR?_SETBRIGHTNESSLEVEL?GEN
-000916H   00092DH   000018H   BYTE   UNIT     CODE           ?PR?RAND?GEN
-00092EH   000943H   000016H   BYTE   UNIT     CODE           ?PR?CLOCK_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-000944H   000958H   000015H   BYTE   UNIT     CODE           ?PR?ADC12_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-000959H   00096BH   000013H   BYTE   UNIT     CODE           ?PR?TIMER16_2_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-00096CH   000978H   00000DH   BYTE   UNIT     CODE           ?PR?PORTS_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-000979H   000984H   00000CH   BYTE   UNIT     CODE           ?PR?PCA_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-000985H   000990H   00000CH   BYTE   UNIT     CODE           ?PR?GETRAW_AMBIENT?GEN
-000991H   00099BH   00000BH   BYTE   UNIT     CODE           ?PR?PCA0_ISR?INTERRUPTS
-00099CH   0009A5H   00000AH   BYTE   UNIT     CODE           ?PR?PBCFG_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-0009A6H   0009AFH   00000AH   BYTE   UNIT     CODE           ?PR?PCACH_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-0009B0H   0009B6H   000007H   BYTE   UNIT     CODE           ?PR?CIP51_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-0009B7H   0009BDH   000007H   BYTE   UNIT     CODE           ?PR?INTERRUPT_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 3
+0002A0H   000490H   0001F1H   BYTE   UNIT     CODE           ?PR?CANDLE_TICK?CANDLE
+000491H   00053EH   0000AEH   BYTE   UNIT     CODE           ?PR?_SET_PWM?GEN
+00053FH   0005DCH   00009EH   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0005DDH   000668H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000669H   0006E0H   000078H   BYTE   UNIT     CODE           ?PR?PROCESS_FADEOUT?PWM
+0006E1H   000751H   000071H   BYTE   UNIT     CODE           ?PR?_UPDATE_STATUS_LED?STATUS_LED
+000752H   0007B3H   000062H   BYTE   UNIT     CODE           ?PR?PROCESS_BUTTON?BUTTON
+0007B4H   000808H   000055H   BYTE   UNIT     CODE           ?PR?_DELAY_MS?GEN
+000809H   00085DH   000055H   BYTE   UNIT     CODE           ?PR?START_POWEROFF_SEQUENCE?PWM
+00085EH   0008A8H   00004BH   BYTE   UNIT     CODE           ?PR?WDT_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+0008A9H   0008F2H   00004AH   BYTE   UNIT     CODE           ?PR?CANDLE_INIT?CANDLE
+0008F3H   000916H   000024H   BYTE   UNIT     CODE           ?PR?_SETBRIGHTNESSLEVEL?GEN
+000917H   00092EH   000018H   BYTE   UNIT     CODE           ?PR?RAND?GEN
+00092FH   000944H   000016H   BYTE   UNIT     CODE           ?PR?CLOCK_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+000945H   000959H   000015H   BYTE   UNIT     CODE           ?PR?ADC12_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+00095AH   00096CH   000013H   BYTE   UNIT     CODE           ?PR?TIMER16_2_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+00096DH   000979H   00000DH   BYTE   UNIT     CODE           ?PR?PORTS_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+00097AH   000985H   00000CH   BYTE   UNIT     CODE           ?PR?PCA_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+000986H   000991H   00000CH   BYTE   UNIT     CODE           ?PR?GETRAW_AMBIENT?GEN
+000992H   00099CH   00000BH   BYTE   UNIT     CODE           ?PR?PCA0_ISR?INTERRUPTS
+00099DH   0009A6H   00000AH   BYTE   UNIT     CODE           ?PR?PBCFG_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+0009A7H   0009B0H   00000AH   BYTE   UNIT     CODE           ?PR?PCACH_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+0009B1H   0009B7H   000007H   BYTE   UNIT     CODE           ?PR?CIP51_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+0009B8H   0009BEH   000007H   BYTE   UNIT     CODE           ?PR?INTERRUPT_0_ENTER_DEFAULTMODE_FROM_RESET?INITDEVICE
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 3
 
 
-0009BEH   0009C2H   000005H   BYTE   UNIT     CODE           ?PR?TIMER2_ISR?INTERRUPTS
-0009C3H   0009C7H   000005H   BYTE   UNIT     CODE           ?PR?_RAND_SET?GEN
-0009C8H   000ADBH   000114H   BYTE   UNIT     CONST          ?CO?GEN
+0009BFH   0009C3H   000005H   BYTE   UNIT     CODE           ?PR?TIMER2_ISR?INTERRUPTS
+0009C4H   0009C8H   000005H   BYTE   UNIT     CODE           ?PR?_RAND_SET?GEN
+0009C9H   000ADCH   000114H   BYTE   UNIT     CONST          ?CO?GEN
 
 * * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
    *DEL*:           000001H   BYTE   UNIT     CODE           ?PR?SILABS_STARTUP?MAIN
@@ -194,7 +194,7 @@ WDT_0_ENTER_DEFAULTMODE_FROM_RESET/INITD+     20H.1 20H.1  003AH 003DH
 
 PORTS_0_ENTER_DEFAULTMODE_FROM_RESET/INI+     ----- -----  ----- -----
 ... TDEVICE
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 4
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 4
 
 
 
@@ -222,7 +222,7 @@ PCACH_0_ENTER_DEFAULTMODE_FROM_RESET/INI+     ----- -----  ----- -----
 INTERRUPT_0_ENTER_DEFAULTMODE_FROM_RESET+     ----- -----  ----- -----
 ... /INITDEVICE
 
-_SET_PWM/GEN                                  20H.2 20H.2  003FH 003FH
+_SET_PWM/GEN                                  20H.2 20H.2  0040H 0040H
 
 GETRAW_AMBIENT/GEN                            ----- -----  ----- -----
 
@@ -233,7 +233,7 @@ _SETBRIGHTNESSLEVEL/GEN                       ----- -----  ----- -----
 CANDLE_INIT/CANDLE                            ----- -----  0039H 0039H
   +--> _SET_PWM/GEN
 
-CANDLE_TICK/CANDLE                            ----- -----  0039H 003EH
+CANDLE_TICK/CANDLE                            ----- -----  0039H 003FH
   +--> RAND/GEN
   +--> _SET_PWM/GEN
 
@@ -259,7 +259,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 
       VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
       =================================================
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 5
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 5
 
 
       00000020H.2 BIT      BIT       ?_set_pwm?BIT
@@ -276,13 +276,13 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       01000262H   CODE     ---       ?C?ULCMP
       010001D0H   CODE     ---       ?C?ULDIV
       00000000H   NUMBER   ---       ?C?XDATASEG
-      01000623H   CODE     ---       ?C_START
+      01000624H   CODE     ---       ?C_START
       01000000H   CODE     ---       ?C_STARTUP
-      010007B3H   CODE     ---       _delay_ms
-      010009C3H   CODE     ---       _rand_set
-      01000490H   CODE     ---       _set_pwm
-      010008F2H   CODE     ---       _setBrightnessLevel
-      010006E0H   CODE     ---       _update_status_led
+      010007B4H   CODE     ---       _delay_ms
+      010009C4H   CODE     ---       _rand_set
+      01000491H   CODE     ---       _set_pwm
+      010008F3H   CODE     ---       _setBrightnessLevel
+      010006E1H   CODE     ---       _update_status_led
 *SFR* 000000E0H   DATA     BYTE      ACC
 *SFR* 000000E0H.0 DATA     BIT       ACC_ACC0
 *SFR* 000000E0H.1 DATA     BIT       ACC_ACC1
@@ -320,11 +320,11 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000C6H   DATA     BYTE      ADC0LTH
 *SFR* 000000C5H   DATA     BYTE      ADC0LTL
 *SFR* 000000BBH   DATA     BYTE      ADC0MX
-      01000944H   CODE     ---       ADC12_0_enter_DefaultMode_from_RESET
+      01000945H   CODE     ---       ADC12_0_enter_DefaultMode_from_RESET
       0000002BH   DATA     BYTE      ambient_level
-      01000AC8H   CONST    ---       ambient_scale
+      01000AC9H   CONST    ---       ambient_scale
 *SFR* 000000F0H   DATA     BYTE      B
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 6
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 6
 
 
 *SFR* 000000F0H.0 DATA     BIT       B_B0
@@ -336,11 +336,11 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000F0H.6 DATA     BIT       B_B6
 *SFR* 000000F0H.7 DATA     BIT       B_B7
       00000029H   DATA     WORD      brightness_correction
-      010009C8H   CONST    ---       brightness_curve
-      00000040H   DATA     BYTE      button_state
-      010008A8H   CODE     ---       candle_init
+      010009C9H   CONST    ---       brightness_curve
+      00000041H   DATA     BYTE      button_state
+      010008A9H   CODE     ---       candle_init
       010002A0H   CODE     ---       candle_tick
-      010009B0H   CODE     ---       CIP51_0_enter_DefaultMode_from_RESET
+      010009B1H   CODE     ---       CIP51_0_enter_DefaultMode_from_RESET
 *SFR* 0000008EH   DATA     BYTE      CKCON0
 *SFR* 000000A6H   DATA     BYTE      CKCON1
 *SFR* 000000C6H   DATA     BYTE      CLEN0
@@ -356,7 +356,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000E8H.7 DATA     BIT       CLIF0_C3RIF
 *SFR* 000000AFH   DATA     BYTE      CLKGRP0
 *SFR* 000000A9H   DATA     BYTE      CLKSEL
-      0100092EH   CODE     ---       CLOCK_0_enter_DefaultMode_from_RESET
+      0100092FH   CODE     ---       CLOCK_0_enter_DefaultMode_from_RESET
 *SFR* 000000D1H   DATA     BYTE      CLOUT0
 *SFR* 000000B1H   DATA     BYTE      CLU0CF
 *SFR* 000000AFH   DATA     BYTE      CLU0FN
@@ -378,7 +378,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000CFH   DATA     BYTE      CRC0FLIP
 *SFR* 000000CAH   DATA     BYTE      CRC0IN
 *SFR* 000000D2H   DATA     BYTE      CRC0ST
-      00000041H   DATA     BYTE      debounce_counter
+      00000042H   DATA     BYTE      debounce_counter
 *SFR* 000000ADH   DATA     BYTE      DERIVID
 *SFR* 000000B5H   DATA     BYTE      DEVICEID
 *SFR* 00000082H   DATA     WORD      DP
@@ -389,7 +389,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000F3H   DATA     BYTE      EIE2
 *SFR* 000000BBH   DATA     BYTE      EIP1
 *SFR* 000000EEH   DATA     BYTE      EIP1H
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 7
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 7
 
 
 *SFR* 000000EDH   DATA     BYTE      EIP2
@@ -397,7 +397,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000E7H   DATA     BYTE      EMI0CN
       01000003H   CODE     ---       enter_DefaultMode_from_RESET
 *SFR* 000000B7H   DATA     BYTE      FLKEY
-      01000985H   CODE     ---       getRAW_Ambient
+      01000986H   CODE     ---       getRAW_Ambient
 *SFR* 000000D6H   DATA     BYTE      HFO0CAL
 *SFR* 000000EFH   DATA     BYTE      HFO0CN
 *SFR* 000000CCH   DATA     BYTE      HFO0TRIM0
@@ -412,7 +412,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000A8H.2 DATA     BIT       IE_EX1
       00000033H   DATA     BYTE      init_blink_count
       00000031H   DATA     WORD      init_blink_timer
-      010009B7H   CODE     ---       INTERRUPT_0_enter_DefaultMode_from_RESET
+      010009B8H   CODE     ---       INTERRUPT_0_enter_DefaultMode_from_RESET
 *SFR* 000000B8H   DATA     BYTE      IP
 *SFR* 000000B8H.4 DATA     BIT       IP_PS0
 *SFR* 000000B8H.6 DATA     BIT       IP_PSPI0
@@ -425,7 +425,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000E4H   DATA     BYTE      IT01CF
       00000034H   DATA     BYTE      led_cmd
 *SFR* 000000B1H   DATA     BYTE      LFO0CN
-      0100053EH   CODE     ---       main
+      0100053FH   CODE     ---       main
 *SFR* 00000080H   DATA     BYTE      P0
 *SFR* 00000080H.0 DATA     BIT       P0_B0
 *SFR* 00000080H.1 DATA     BIT       P0_B1
@@ -453,12 +453,12 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000A0H.0 DATA     BIT       P2_B0
 *SFR* 000000F3H   DATA     BYTE      P2MDIN
 *SFR* 000000A6H   DATA     BYTE      P2MDOUT
-      0100099CH   CODE     ---       PBCFG_0_enter_DefaultMode_from_RESET
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 8
+      0100099DH   CODE     ---       PBCFG_0_enter_DefaultMode_from_RESET
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 8
 
 
 *SFR* 000000F9H   DATA     WORD      PCA0
-      01000991H   CODE     ---       PCA0_ISR
+      01000992H   CODE     ---       PCA0_ISR
 *SFR* 0000009EH   DATA     BYTE      PCA0CENT
 *SFR* 000000D8H   DATA     BYTE      PCA0CN0
 *SFR* 000000D8H.0 DATA     BIT       PCA0CN0_CCF0
@@ -483,20 +483,20 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000D9H   DATA     BYTE      PCA0MD
 *SFR* 00000096H   DATA     BYTE      PCA0POL
 *SFR* 000000F7H   DATA     BYTE      PCA0PWM
-      01000979H   CODE     ---       PCA_0_enter_DefaultMode_from_RESET
-      010009A6H   CODE     ---       PCACH_0_enter_DefaultMode_from_RESET
+      0100097AH   CODE     ---       PCA_0_enter_DefaultMode_from_RESET
+      010009A7H   CODE     ---       PCACH_0_enter_DefaultMode_from_RESET
 *SFR* 00000087H   DATA     BYTE      PCON0
 *SFR* 000000CDH   DATA     BYTE      PCON1
 *SFR* 000000C1H   DATA     BYTE      PFE0CN
 *SFR* 00000080H.6 DATA     BIT       PIN_BUT
 *SFR* 00000080H.3 DATA     BIT       PIN_LED
-      0100096CH   CODE     ---       PORTS_0_enter_DefaultMode_from_RESET
+      0100096DH   CODE     ---       PORTS_0_enter_DefaultMode_from_RESET
       00000020H.6 BIT      BIT       poweroff_active
       00000035H   DATA     WORD      poweroff_timer
       00000020H.3 BIT      BIT       poweroff_trigger
-      00000042H   DATA     WORD      press_duration
-      01000751H   CODE     ---       process_button
-      01000668H   CODE     ---       process_fadeout
+      00000043H   DATA     WORD      press_duration
+      01000752H   CODE     ---       process_button
+      01000669H   CODE     ---       process_fadeout
 *SFR* 000000F6H   DATA     BYTE      PRTDRV
 *SFR* 0000008FH   DATA     BYTE      PSCTL
 *SFR* 000000AAH   DATA     BYTE      PSTAT0
@@ -519,7 +519,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000DFH   DATA     BYTE      PWMCFG3
 *DEL*:00000000H   CODE     ---       PWMCH_0_enter_DefaultMode_from_RESET
 *DEL*:00000000H   CODE     ---       PWMCH_1_enter_DefaultMode_from_RESET
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 9
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 9
 
 
 *DEL*:00000000H   CODE     ---       PWMCH_2_enter_DefaultMode_from_RESET
@@ -552,7 +552,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000C6H   DATA     BYTE      PWMLIMH
 *SFR* 000000C5H   DATA     BYTE      PWMLIML
 *SFR* 0000009BH   DATA     BYTE      PWMSTATUS
-      01000916H   CODE     ---       rand
+      01000917H   CODE     ---       rand
 *SFR* 000000D1H   DATA     BYTE      REF0CN
 *SFR* 000000C9H   DATA     BYTE      REG0CN
 *SFR* 000000B6H   DATA     BYTE      REVID
@@ -584,7 +584,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000C0H.6 DATA     BIT       SMB0CN0_TXMODE
 *SFR* 000000C2H   DATA     BYTE      SMB0DAT
 *SFR* 000000C3H   DATA     BYTE      SMB0FCN0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 10
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 10
 
 
 *SFR* 000000C4H   DATA     BYTE      SMB0FCN1
@@ -608,7 +608,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 0000009BH   DATA     BYTE      SPI0FCN1
 *SFR* 000000F7H   DATA     BYTE      SPI0FCT
 *SFR* 000000DFH   DATA     BYTE      SPI0PCF
-      01000808H   CODE     ---       start_poweroff_sequence
+      01000809H   CODE     ---       start_poweroff_sequence
 *SFR* 00000088H   DATA     BYTE      TCON
 *SFR* 00000088H.1 DATA     BIT       TCON_IE0
 *SFR* 00000088H.3 DATA     BIT       TCON_IE1
@@ -620,8 +620,8 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 00000088H.6 DATA     BIT       TCON_TR1
 *SFR* 0000008CH   DATA     BYTE      TH0
 *SFR* 0000008DH   DATA     BYTE      TH1
-      01000959H   CODE     ---       TIMER16_2_enter_DefaultMode_from_RESET
-      010009BEH   CODE     ---       TIMER2_ISR
+      0100095AH   CODE     ---       TIMER16_2_enter_DefaultMode_from_RESET
+      010009BFH   CODE     ---       TIMER2_ISR
 *SFR* 0000008AH   DATA     BYTE      TL0
 *SFR* 0000008BH   DATA     BYTE      TL1
 *SFR* 00000089H   DATA     BYTE      TMOD
@@ -649,7 +649,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 00000092H   DATA     WORD      TMR3RL
 *SFR* 00000093H   DATA     BYTE      TMR3RLH
 *SFR* 00000092H   DATA     BYTE      TMR3RLL
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 11
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 11
 
 
 *SFR* 000000A4H   DATA     WORD      TMR4
@@ -685,7 +685,7 @@ PUBLIC SYMBOLS OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 *SFR* 000000D3H   DATA     BYTE      TMR5RLH
 *SFR* 000000D2H   DATA     BYTE      TMR5RLL
 *SFR* 000000D9H   DATA     BYTE      UART0PCF
-      0100085DH   CODE     ---       WDT_0_enter_DefaultMode_from_RESET
+      0100085EH   CODE     ---       WDT_0_enter_DefaultMode_from_RESET
 *SFR* 00000097H   DATA     BYTE      WDTCN
 *SFR* 000000E1H   DATA     BYTE      XBR0
 *SFR* 000000E2H   DATA     BYTE      XBR1
@@ -703,7 +703,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000020H.4 PUBLIC    BIT      BIT       effect_trigger
       00000020H.3 PUBLIC    BIT      BIT       poweroff_trigger
       00000021H   PUBLIC    DATA     ---       pwm_channels
-      0100053EH   PUBLIC    CODE     ---       main
+      0100053FH   PUBLIC    CODE     ---       main
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
       000000D0H.2 SFRSYM    DATA     BIT       PSW_OV
@@ -714,7 +714,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000A0H   SFRSYM    DATA     BYTE      P2
       000000B6H   SFRSYM    DATA     BYTE      PWMCPH1
       0000009FH   SFRSYM    DATA     BYTE      PWMIE
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 12
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 12
 
 
       000000BEH   SFRSYM    DATA     BYTE      PWMCPH2
@@ -779,7 +779,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000E8H.0 SFRSYM    DATA     BIT       ADC0CN0_TEMPE
       000000DCH   SFRSYM    DATA     BYTE      PCA0CPM2
       000000B8H   SFRSYM    DATA     BYTE      IP
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 13
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 13
 
 
       000000F0H.6 SFRSYM    DATA     BIT       B_B6
@@ -844,7 +844,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000AFH   SFRSYM    DATA     BYTE      CLU0FN
       00000098H.4 SFRSYM    DATA     BIT       SCON0_REN
       000000ACH   SFRSYM    DATA     BYTE      SMB0TC
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 14
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 14
 
 
       000000F2H   SFRSYM    DATA     BYTE      P1MDIN
@@ -909,7 +909,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000092H   SFRSYM    DATA     WORD      TMR3RL
       000000A2H   SFRSYM    DATA     WORD      TMR4RL
       000000D8H   SFRSYM    DATA     BYTE      PCA0CN0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 15
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 15
 
 
       000000E0H   SFRSYM    DATA     BYTE      ACC
@@ -974,7 +974,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000D6H   SFRSYM    DATA     BYTE      HFO0CAL
       00000088H.5 SFRSYM    DATA     BIT       TCON_TF0
       00000098H.0 SFRSYM    DATA     BIT       SCON0_RI
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 16
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 16
 
 
       00000082H   SFRSYM    DATA     BYTE      DPL
@@ -1039,7 +1039,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000094H   SFRSYM    DATA     BYTE      TMR3L
       000000A8H.7 SFRSYM    DATA     BIT       IE_EA
       000000C3H   SFRSYM    DATA     WORD      PWM
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 17
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 17
 
 
       000000A4H   SFRSYM    DATA     BYTE      TMR4L
@@ -1070,76 +1070,76 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000CCH   SFRSYM    DATA     BYTE      HFO0TRIM0
       000000B7H   SFRSYM    DATA     BYTE      FLKEY
 
-      0100053EH   BLOCK     CODE     ---       LVL=0
-      01000598H   BLOCK     CODE     NEAR LAB  LVL=1
+      0100053FH   BLOCK     CODE     ---       LVL=0
+      01000599H   BLOCK     CODE     NEAR LAB  LVL=1
       00000037H   SYMBOL    DATA     WORD      ambient
-      010005B2H   BLOCK     CODE     NEAR LAB  LVL=2
+      010005B3H   BLOCK     CODE     NEAR LAB  LVL=2
       00000020H.0 SYMBOL    BIT      BIT       fade_finished
       ---         BLOCKEND  ---      ---       LVL=2
       ---         BLOCKEND  ---      ---       LVL=1
-      0100053EH   LINE      CODE     ---       #39
-      0100053EH   LINE      CODE     ---       #40
-      01000541H   LINE      CODE     ---       #42
-      01000544H   LINE      CODE     ---       #43
-      01000547H   LINE      CODE     ---       #45
-      0100054AH   LINE      CODE     ---       #46
-      0100054DH   LINE      CODE     ---       #47
-      01000550H   LINE      CODE     ---       #48
-      01000553H   LINE      CODE     ---       #49
-      01000556H   LINE      CODE     ---       #51
-      01000558H   LINE      CODE     ---       #53
-      01000560H   LINE      CODE     ---       #54
-      0100056AH   LINE      CODE     ---       #55
-      01000574H   LINE      CODE     ---       #56
-      0100057EH   LINE      CODE     ---       #58
-      01000580H   LINE      CODE     ---       #60
-      01000586H   LINE      CODE     ---       #62
-      01000588H   LINE      CODE     ---       #64
-      0100058AH   LINE      CODE     ---       #65
-      0100058DH   LINE      CODE     ---       #67
-      01000590H   LINE      CODE     ---       #69
-      01000595H   LINE      CODE     ---       #70
-      01000598H   LINE      CODE     ---       #73
-      01000598H   LINE      CODE     ---       #74
-      0100059FH   LINE      CODE     ---       #76
-      010005A2H   LINE      CODE     ---       #77
-      010005A4H   LINE      CODE     ---       #78
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 18
+      0100053FH   LINE      CODE     ---       #39
+      0100053FH   LINE      CODE     ---       #40
+      01000542H   LINE      CODE     ---       #42
+      01000545H   LINE      CODE     ---       #43
+      01000548H   LINE      CODE     ---       #45
+      0100054BH   LINE      CODE     ---       #46
+      0100054EH   LINE      CODE     ---       #47
+      01000551H   LINE      CODE     ---       #48
+      01000554H   LINE      CODE     ---       #49
+      01000557H   LINE      CODE     ---       #51
+      01000559H   LINE      CODE     ---       #53
+      01000561H   LINE      CODE     ---       #54
+      0100056BH   LINE      CODE     ---       #55
+      01000575H   LINE      CODE     ---       #56
+      0100057FH   LINE      CODE     ---       #58
+      01000581H   LINE      CODE     ---       #60
+      01000587H   LINE      CODE     ---       #62
+      01000589H   LINE      CODE     ---       #64
+      0100058BH   LINE      CODE     ---       #65
+      0100058EH   LINE      CODE     ---       #67
+      01000591H   LINE      CODE     ---       #69
+      01000596H   LINE      CODE     ---       #70
+      01000599H   LINE      CODE     ---       #73
+      01000599H   LINE      CODE     ---       #74
+      010005A0H   LINE      CODE     ---       #76
+      010005A3H   LINE      CODE     ---       #77
+      010005A5H   LINE      CODE     ---       #78
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 18
 
 
-      010005A7H   LINE      CODE     ---       #79
-      010005AAH   LINE      CODE     ---       #80
-      010005AFH   LINE      CODE     ---       #81
-      010005AFH   LINE      CODE     ---       #83
-      010005B2H   LINE      CODE     ---       #84
-      010005B4H   LINE      CODE     ---       #85
-      010005B6H   LINE      CODE     ---       #86
-      010005B9H   LINE      CODE     ---       #87
-      010005BCH   LINE      CODE     ---       #88
-      010005BFH   LINE      CODE     ---       #89
-      010005C1H   LINE      CODE     ---       #90
-      010005C6H   LINE      CODE     ---       #91
-      010005C6H   LINE      CODE     ---       #92
-      010005C8H   LINE      CODE     ---       #94
-      010005CBH   LINE      CODE     ---       #95
-      010005D2H   LINE      CODE     ---       #96
-      010005D4H   LINE      CODE     ---       #97
-      010005D7H   LINE      CODE     ---       #98
-      010005DAH   LINE      CODE     ---       #99
-      010005DAH   LINE      CODE     ---       #101
+      010005A8H   LINE      CODE     ---       #79
+      010005ABH   LINE      CODE     ---       #80
+      010005B0H   LINE      CODE     ---       #81
+      010005B0H   LINE      CODE     ---       #83
+      010005B3H   LINE      CODE     ---       #84
+      010005B5H   LINE      CODE     ---       #85
+      010005B7H   LINE      CODE     ---       #86
+      010005BAH   LINE      CODE     ---       #87
+      010005BDH   LINE      CODE     ---       #88
+      010005C0H   LINE      CODE     ---       #89
+      010005C2H   LINE      CODE     ---       #90
+      010005C7H   LINE      CODE     ---       #91
+      010005C7H   LINE      CODE     ---       #92
+      010005C9H   LINE      CODE     ---       #94
+      010005CCH   LINE      CODE     ---       #95
+      010005D3H   LINE      CODE     ---       #96
+      010005D5H   LINE      CODE     ---       #97
+      010005D8H   LINE      CODE     ---       #98
+      010005DBH   LINE      CODE     ---       #99
+      010005DBH   LINE      CODE     ---       #101
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       INITDEVICE
-      01000959H   PUBLIC    CODE     ---       TIMER16_2_enter_DefaultMode_from_RESET
-      01000944H   PUBLIC    CODE     ---       ADC12_0_enter_DefaultMode_from_RESET
-      010009A6H   PUBLIC    CODE     ---       PCACH_0_enter_DefaultMode_from_RESET
-      01000979H   PUBLIC    CODE     ---       PCA_0_enter_DefaultMode_from_RESET
-      010009B7H   PUBLIC    CODE     ---       INTERRUPT_0_enter_DefaultMode_from_RESET
-      010009B0H   PUBLIC    CODE     ---       CIP51_0_enter_DefaultMode_from_RESET
-      0100092EH   PUBLIC    CODE     ---       CLOCK_0_enter_DefaultMode_from_RESET
-      0100099CH   PUBLIC    CODE     ---       PBCFG_0_enter_DefaultMode_from_RESET
-      0100096CH   PUBLIC    CODE     ---       PORTS_0_enter_DefaultMode_from_RESET
-      0100085DH   PUBLIC    CODE     ---       WDT_0_enter_DefaultMode_from_RESET
+      0100095AH   PUBLIC    CODE     ---       TIMER16_2_enter_DefaultMode_from_RESET
+      01000945H   PUBLIC    CODE     ---       ADC12_0_enter_DefaultMode_from_RESET
+      010009A7H   PUBLIC    CODE     ---       PCACH_0_enter_DefaultMode_from_RESET
+      0100097AH   PUBLIC    CODE     ---       PCA_0_enter_DefaultMode_from_RESET
+      010009B8H   PUBLIC    CODE     ---       INTERRUPT_0_enter_DefaultMode_from_RESET
+      010009B1H   PUBLIC    CODE     ---       CIP51_0_enter_DefaultMode_from_RESET
+      0100092FH   PUBLIC    CODE     ---       CLOCK_0_enter_DefaultMode_from_RESET
+      0100099DH   PUBLIC    CODE     ---       PBCFG_0_enter_DefaultMode_from_RESET
+      0100096DH   PUBLIC    CODE     ---       PORTS_0_enter_DefaultMode_from_RESET
+      0100085EH   PUBLIC    CODE     ---       WDT_0_enter_DefaultMode_from_RESET
       01000003H   PUBLIC    CODE     ---       enter_DefaultMode_from_RESET
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
@@ -1169,7 +1169,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000E4H   SFRSYM    DATA     BYTE      IT01CF
       000000C0H.6 SFRSYM    DATA     BIT       SMB0CN0_TXMODE
       000000E2H   SFRSYM    DATA     BYTE      PWMDTINLIM
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 19
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 19
 
 
       000000ADH   SFRSYM    DATA     BYTE      DERIVID
@@ -1234,7 +1234,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C0H.5 SFRSYM    DATA     BIT       SMB0CN0_STA
       000000E3H   SFRSYM    DATA     BYTE      XBR2
       000000B1H   SFRSYM    DATA     BYTE      CLU0CF
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 20
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 20
 
 
       000000BBH   SFRSYM    DATA     BYTE      ADC0MX
@@ -1299,7 +1299,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C8H.1 SFRSYM    DATA     BIT       TMR2CN0_T2XCLK1
       000000E8H.7 SFRSYM    DATA     BIT       ADC0CN0_ADEN
       00000089H   SFRSYM    DATA     BYTE      TMOD
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 21
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 21
 
 
       00000088H   SFRSYM    DATA     BYTE      TCON
@@ -1364,7 +1364,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C0H.2 SFRSYM    DATA     BIT       SMB0CN0_ARBLOST
       000000B8H.5 SFRSYM    DATA     BIT       IP_PT2
       0000008AH   SFRSYM    DATA     BYTE      TL0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 22
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 22
 
 
       000000D0H.5 SFRSYM    DATA     BIT       PSW_F0
@@ -1429,7 +1429,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C0H.3 SFRSYM    DATA     BIT       TMR5CN0_T5SPLIT
       00000088H.2 SFRSYM    DATA     BIT       TCON_IT1
       000000D7H   SFRSYM    DATA     BYTE      SFRSTACK
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 23
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 23
 
 
       00000098H   SFRSYM    DATA     BYTE      SCON0
@@ -1494,7 +1494,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000E8H.2 SFRSYM    DATA     BIT       CLIF0_C1FIF
       000000D0H   SFRSYM    DATA     BYTE      PSW
       000000F7H   SFRSYM    DATA     BYTE      PCA0PWM
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 24
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 24
 
 
       000000E8H.4 SFRSYM    DATA     BIT       CLIF0_C2FIF
@@ -1526,129 +1526,129 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       01000027H   LINE      CODE     ---       #42
       ---         BLOCKEND  ---      ---       LVL=0
 
-      0100085DH   BLOCK     CODE     ---       LVL=0
-      0100085DH   BLOCK     CODE     NEAR LAB  LVL=1
+      0100085EH   BLOCK     CODE     ---       LVL=0
+      0100085EH   BLOCK     CODE     NEAR LAB  LVL=1
       0000003AH   SYMBOL    DATA     DWORD     i
       00000020H.1 SYMBOL    BIT      BIT       ea
       ---         BLOCKEND  ---      ---       LVL=1
-      0100085DH   LINE      CODE     ---       #45
-      0100085DH   LINE      CODE     ---       #46
-      0100085DH   LINE      CODE     ---       #53
-      01000860H   LINE      CODE     ---       #56
-      01000863H   LINE      CODE     ---       #59
-      0100087FH   LINE      CODE     ---       #60
-      0100087FH   LINE      CODE     ---       #61
-      01000880H   LINE      CODE     ---       #62
-      01000897H   LINE      CODE     ---       #65
-      0100089BH   LINE      CODE     ---       #66
-      0100089DH   LINE      CODE     ---       #67
-      010008A0H   LINE      CODE     ---       #68
-      010008A3H   LINE      CODE     ---       #69
-      010008A7H   LINE      CODE     ---       #73
+      0100085EH   LINE      CODE     ---       #45
+      0100085EH   LINE      CODE     ---       #46
+      0100085EH   LINE      CODE     ---       #53
+      01000861H   LINE      CODE     ---       #56
+      01000864H   LINE      CODE     ---       #59
+      01000880H   LINE      CODE     ---       #60
+      01000880H   LINE      CODE     ---       #61
+      01000881H   LINE      CODE     ---       #62
+      01000898H   LINE      CODE     ---       #65
+      0100089CH   LINE      CODE     ---       #66
+      0100089EH   LINE      CODE     ---       #67
+      010008A1H   LINE      CODE     ---       #68
+      010008A4H   LINE      CODE     ---       #69
+      010008A8H   LINE      CODE     ---       #73
       ---         BLOCKEND  ---      ---       LVL=0
 
-      0100096CH   BLOCK     CODE     ---       LVL=0
-      0100096CH   LINE      CODE     ---       #76
-      0100096CH   LINE      CODE     ---       #77
-      0100096CH   LINE      CODE     ---       #89
-      0100096FH   LINE      CODE     ---       #104
-      01000972H   LINE      CODE     ---       #120
-      01000975H   LINE      CODE     ---       #136
-      01000978H   LINE      CODE     ---       #147
+      0100096DH   BLOCK     CODE     ---       LVL=0
+      0100096DH   LINE      CODE     ---       #76
+      0100096DH   LINE      CODE     ---       #77
+      0100096DH   LINE      CODE     ---       #89
+      01000970H   LINE      CODE     ---       #104
+      01000973H   LINE      CODE     ---       #120
+      01000976H   LINE      CODE     ---       #136
+      01000979H   LINE      CODE     ---       #147
       ---         BLOCKEND  ---      ---       LVL=0
 
-      0100099CH   BLOCK     CODE     ---       LVL=0
-      0100099CH   LINE      CODE     ---       #150
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 25
+      0100099DH   BLOCK     CODE     ---       LVL=0
+      0100099DH   LINE      CODE     ---       #150
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 25
 
 
-      0100099CH   LINE      CODE     ---       #151
-      0100099CH   LINE      CODE     ---       #159
-      0100099FH   LINE      CODE     ---       #170
-      010009A2H   LINE      CODE     ---       #185
-      010009A5H   LINE      CODE     ---       #189
+      0100099DH   LINE      CODE     ---       #151
+      0100099DH   LINE      CODE     ---       #159
+      010009A0H   LINE      CODE     ---       #170
+      010009A3H   LINE      CODE     ---       #185
+      010009A6H   LINE      CODE     ---       #189
       ---         BLOCKEND  ---      ---       LVL=0
 
-      0100092EH   BLOCK     CODE     ---       LVL=0
-      0100092EH   LINE      CODE     ---       #192
-      0100092EH   LINE      CODE     ---       #193
-      0100092EH   LINE      CODE     ---       #196
-      01000931H   LINE      CODE     ---       #197
-      01000937H   LINE      CODE     ---       #206
-      0100093AH   LINE      CODE     ---       #207
-      01000940H   LINE      CODE     ---       #218
-      01000943H   LINE      CODE     ---       #222
+      0100092FH   BLOCK     CODE     ---       LVL=0
+      0100092FH   LINE      CODE     ---       #192
+      0100092FH   LINE      CODE     ---       #193
+      0100092FH   LINE      CODE     ---       #196
+      01000932H   LINE      CODE     ---       #197
+      01000938H   LINE      CODE     ---       #206
+      0100093BH   LINE      CODE     ---       #207
+      01000941H   LINE      CODE     ---       #218
+      01000944H   LINE      CODE     ---       #222
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010009B0H   BLOCK     CODE     ---       LVL=0
-      010009B0H   LINE      CODE     ---       #225
-      010009B0H   LINE      CODE     ---       #226
-      010009B0H   LINE      CODE     ---       #231
-      010009B3H   LINE      CODE     ---       #232
-      010009B6H   LINE      CODE     ---       #235
+      010009B1H   BLOCK     CODE     ---       LVL=0
+      010009B1H   LINE      CODE     ---       #225
+      010009B1H   LINE      CODE     ---       #226
+      010009B1H   LINE      CODE     ---       #231
+      010009B4H   LINE      CODE     ---       #232
+      010009B7H   LINE      CODE     ---       #235
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010009B7H   BLOCK     CODE     ---       LVL=0
-      010009B7H   LINE      CODE     ---       #238
-      010009B7H   LINE      CODE     ---       #239
-      010009B7H   LINE      CODE     ---       #249
-      010009BAH   LINE      CODE     ---       #279
-      010009BDH   LINE      CODE     ---       #290
+      010009B8H   BLOCK     CODE     ---       LVL=0
+      010009B8H   LINE      CODE     ---       #238
+      010009B8H   LINE      CODE     ---       #239
+      010009B8H   LINE      CODE     ---       #249
+      010009BBH   LINE      CODE     ---       #279
+      010009BEH   LINE      CODE     ---       #290
       ---         BLOCKEND  ---      ---       LVL=0
 
-      01000979H   BLOCK     CODE     ---       LVL=0
-      01000979H   LINE      CODE     ---       #293
-      01000979H   LINE      CODE     ---       #294
-      01000979H   LINE      CODE     ---       #295
-      0100097CH   LINE      CODE     ---       #297
-      0100097EH   LINE      CODE     ---       #307
-      01000981H   LINE      CODE     ---       #326
-      01000984H   LINE      CODE     ---       #336
+      0100097AH   BLOCK     CODE     ---       LVL=0
+      0100097AH   LINE      CODE     ---       #293
+      0100097AH   LINE      CODE     ---       #294
+      0100097AH   LINE      CODE     ---       #295
+      0100097DH   LINE      CODE     ---       #297
+      0100097FH   LINE      CODE     ---       #307
+      01000982H   LINE      CODE     ---       #326
+      01000985H   LINE      CODE     ---       #336
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010009A6H   BLOCK     CODE     ---       LVL=0
-      010009A6H   LINE      CODE     ---       #339
-      010009A6H   LINE      CODE     ---       #340
-      010009A6H   LINE      CODE     ---       #343
-      010009A9H   LINE      CODE     ---       #357
-      010009ACH   LINE      CODE     ---       #366
-      010009AFH   LINE      CODE     ---       #375
+      010009A7H   BLOCK     CODE     ---       LVL=0
+      010009A7H   LINE      CODE     ---       #339
+      010009A7H   LINE      CODE     ---       #340
+      010009A7H   LINE      CODE     ---       #343
+      010009AAH   LINE      CODE     ---       #357
+      010009ADH   LINE      CODE     ---       #366
+      010009B0H   LINE      CODE     ---       #375
       ---         BLOCKEND  ---      ---       LVL=0
 
-      01000944H   BLOCK     CODE     ---       LVL=0
-      01000944H   LINE      CODE     ---       #378
-      01000944H   LINE      CODE     ---       #379
-      01000944H   LINE      CODE     ---       #389
-      01000947H   LINE      CODE     ---       #390
-      0100094AH   LINE      CODE     ---       #398
-      0100094CH   LINE      CODE     ---       #408
-      0100094FH   LINE      CODE     ---       #417
-      01000952H   LINE      CODE     ---       #443
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 26
+      01000945H   BLOCK     CODE     ---       LVL=0
+      01000945H   LINE      CODE     ---       #378
+      01000945H   LINE      CODE     ---       #379
+      01000945H   LINE      CODE     ---       #389
+      01000948H   LINE      CODE     ---       #390
+      0100094BH   LINE      CODE     ---       #398
+      0100094DH   LINE      CODE     ---       #408
+      01000950H   LINE      CODE     ---       #417
+      01000953H   LINE      CODE     ---       #443
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 26
 
 
-      01000955H   LINE      CODE     ---       #444
-      01000958H   LINE      CODE     ---       #447
+      01000956H   LINE      CODE     ---       #444
+      01000959H   LINE      CODE     ---       #447
       ---         BLOCKEND  ---      ---       LVL=0
 
-      01000959H   BLOCK     CODE     ---       LVL=0
-      01000959H   BLOCK     CODE     NEAR LAB  LVL=1
+      0100095AH   BLOCK     CODE     ---       LVL=0
+      0100095AH   BLOCK     CODE     NEAR LAB  LVL=1
       00000007H   SYMBOL    DATA     BYTE      TMR2CN0_TR2_save
       ---         BLOCKEND  ---      ---       LVL=1
-      01000959H   LINE      CODE     ---       #579
-      01000959H   LINE      CODE     ---       #580
-      01000959H   LINE      CODE     ---       #584
-      0100095DH   LINE      CODE     ---       #586
-      01000960H   LINE      CODE     ---       #605
-      01000963H   LINE      CODE     ---       #612
-      01000966H   LINE      CODE     ---       #619
-      01000969H   LINE      CODE     ---       #624
-      0100096BH   LINE      CODE     ---       #627
+      0100095AH   LINE      CODE     ---       #579
+      0100095AH   LINE      CODE     ---       #580
+      0100095AH   LINE      CODE     ---       #584
+      0100095EH   LINE      CODE     ---       #586
+      01000961H   LINE      CODE     ---       #605
+      01000964H   LINE      CODE     ---       #612
+      01000967H   LINE      CODE     ---       #619
+      0100096AH   LINE      CODE     ---       #624
+      0100096CH   LINE      CODE     ---       #627
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       INTERRUPTS
-      010009BEH   PUBLIC    CODE     ---       TIMER2_ISR
-      01000991H   PUBLIC    CODE     ---       PCA0_ISR
+      010009BFH   PUBLIC    CODE     ---       TIMER2_ISR
+      01000992H   PUBLIC    CODE     ---       PCA0_ISR
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
       000000D0H.2 SFRSYM    DATA     BIT       PSW_OV
@@ -1689,7 +1689,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000093H   SFRSYM    DATA     BYTE      TMR3RLH
       000000A3H   SFRSYM    DATA     BYTE      TMR4RLH
       000000BBH   SFRSYM    DATA     BYTE      EIP1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 27
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 27
 
 
       000000D3H   SFRSYM    DATA     BYTE      TMR5RLH
@@ -1754,7 +1754,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C9H   SFRSYM    DATA     BYTE      REG0CN
       000000C6H   SFRSYM    DATA     BYTE      PWMLIMH
       000000B2H   SFRSYM    DATA     BYTE      PWMCPUDL1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 28
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 28
 
 
       000000CAH   SFRSYM    DATA     BYTE      CRC0IN
@@ -1819,7 +1819,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000098H.1 SFRSYM    DATA     BIT       TMR4CN0_T4XCLK1
       000000A8H.3 SFRSYM    DATA     BIT       IE_ET1
       00000099H   SFRSYM    DATA     WORD      PWMCP0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 29
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 29
 
 
       000000D4H   SFRSYM    DATA     BYTE      P0SKIP
@@ -1884,7 +1884,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000B8H.0 SFRSYM    DATA     BIT       IP_PX0
       00000090H.0 SFRSYM    DATA     BIT       P1_B0
       00000080H.1 SFRSYM    DATA     BIT       P0_B1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 30
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 30
 
 
       000000B8H.2 SFRSYM    DATA     BIT       IP_PX1
@@ -1949,7 +1949,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C5H   SFRSYM    DATA     BYTE      ADC0LTL
       000000F8H.5 SFRSYM    DATA     BIT       SPI0CN0_MODF
       000000B8H.6 SFRSYM    DATA     BIT       IP_PSPI0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 31
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 31
 
 
       000000E8H.1 SFRSYM    DATA     BIT       ADC0CN0_ADGN0
@@ -2012,28 +2012,28 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000CCH   SFRSYM    DATA     BYTE      HFO0TRIM0
       000000B7H   SFRSYM    DATA     BYTE      FLKEY
 
-      01000991H   BLOCK     CODE     ---       LVL=0
-      01000991H   LINE      CODE     ---       #25
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 32
+      01000992H   BLOCK     CODE     ---       LVL=0
+      01000992H   LINE      CODE     ---       #25
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 32
 
 
-      01000991H   LINE      CODE     ---       #27
-      01000994H   LINE      CODE     ---       #28
-      01000997H   LINE      CODE     ---       #29
-      01000999H   LINE      CODE     ---       #30
-      0100099BH   LINE      CODE     ---       #31
+      01000992H   LINE      CODE     ---       #27
+      01000995H   LINE      CODE     ---       #28
+      01000998H   LINE      CODE     ---       #29
+      0100099AH   LINE      CODE     ---       #30
+      0100099CH   LINE      CODE     ---       #31
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010009BEH   BLOCK     CODE     ---       LVL=0
-      010009BEH   LINE      CODE     ---       #43
-      010009BEH   LINE      CODE     ---       #45
-      010009C0H   LINE      CODE     ---       #46
-      010009C2H   LINE      CODE     ---       #47
+      010009BFH   BLOCK     CODE     ---       LVL=0
+      010009BFH   LINE      CODE     ---       #43
+      010009BFH   LINE      CODE     ---       #45
+      010009C1H   LINE      CODE     ---       #46
+      010009C3H   LINE      CODE     ---       #47
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       CANDLE
       010002A0H   PUBLIC    CODE     ---       candle_tick
-      010008A8H   PUBLIC    CODE     ---       candle_init
+      010008A9H   PUBLIC    CODE     ---       candle_init
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
       000000D0H.2 SFRSYM    DATA     BIT       PSW_OV
@@ -2079,7 +2079,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000098H.2 SFRSYM    DATA     BIT       SCON0_RB8
       000000CAH   SFRSYM    DATA     BYTE      TMR2RLL
       000000FCH   SFRSYM    DATA     BYTE      PCA0CPH0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 33
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 33
 
 
       00000092H   SFRSYM    DATA     BYTE      TMR3RLL
@@ -2144,7 +2144,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000A6H   SFRSYM    DATA     BYTE      CKCON1
       000000C8H.2 SFRSYM    DATA     BIT       TMR2CN0_TR2
       000000E0H.2 SFRSYM    DATA     BIT       ACC_ACC2
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 34
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 34
 
 
       000000B9H   SFRSYM    DATA     BYTE      PWMCPUDL2
@@ -2209,7 +2209,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C0H.0 SFRSYM    DATA     BIT       TMR5CN0_T5XCLK0
       000000A8H.5 SFRSYM    DATA     BIT       IE_ET2
       000000B5H   SFRSYM    DATA     WORD      PWMCP1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 35
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 35
 
 
       000000D5H   SFRSYM    DATA     BYTE      P1SKIP
@@ -2274,7 +2274,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C6H   SFRSYM    DATA     BYTE      CLEN0
       00000088H.1 SFRSYM    DATA     BIT       TCON_IE0
       000000A0H.0 SFRSYM    DATA     BIT       P2_B0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 36
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 36
 
 
       00000090H.1 SFRSYM    DATA     BIT       P1_B1
@@ -2339,7 +2339,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000E8H.2 SFRSYM    DATA     BIT       ADC0CN0_ADGN1
       000000C8H   SFRSYM    DATA     BYTE      TMR2CN0
       000000E3H   SFRSYM    DATA     BYTE      PWMCKDIV
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 37
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 37
 
 
       00000091H   SFRSYM    DATA     BYTE      TMR3CN0
@@ -2399,94 +2399,97 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000020H.7 SYMBOL    BIT      BIT       startup_done
       00000008H   SYMBOL    DATA     ---       leds
 
-      010008A8H   BLOCK     CODE     ---       LVL=0
-      010008A8H   BLOCK     CODE     NEAR LAB  LVL=1
+      010008A9H   BLOCK     CODE     ---       LVL=0
+      010008A9H   BLOCK     CODE     NEAR LAB  LVL=1
       00000039H   SYMBOL    DATA     BYTE      i
       ---         BLOCKEND  ---      ---       LVL=1
-      010008A8H   LINE      CODE     ---       #19
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 38
+      010008A9H   LINE      CODE     ---       #25
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 38
 
 
-      010008A8H   LINE      CODE     ---       #20
-      010008A8H   LINE      CODE     ---       #22
-      010008B6H   LINE      CODE     ---       #23
-      010008C1H   LINE      CODE     ---       #24
-      010008CCH   LINE      CODE     ---       #25
-      010008D7H   LINE      CODE     ---       #26
-      010008E2H   LINE      CODE     ---       #27
-      010008EBH   LINE      CODE     ---       #28
-      010008EFH   LINE      CODE     ---       #29
-      010008F1H   LINE      CODE     ---       #30
+      010008A9H   LINE      CODE     ---       #26
+      010008A9H   LINE      CODE     ---       #28
+      010008B7H   LINE      CODE     ---       #29
+      010008C2H   LINE      CODE     ---       #30
+      010008CDH   LINE      CODE     ---       #31
+      010008D8H   LINE      CODE     ---       #32
+      010008E3H   LINE      CODE     ---       #33
+      010008ECH   LINE      CODE     ---       #34
+      010008F0H   LINE      CODE     ---       #35
+      010008F2H   LINE      CODE     ---       #36
       ---         BLOCKEND  ---      ---       LVL=0
 
       010002A0H   BLOCK     CODE     ---       LVL=0
       010002A0H   BLOCK     CODE     NEAR LAB  LVL=1
       00000039H   SYMBOL    DATA     BYTE      i
+      0000003AH   SYMBOL    DATA     BYTE      idx
       010002B1H   BLOCK     CODE     NEAR LAB  LVL=2
-      0000003AH   SYMBOL    DATA     ---       led
-      0000003DH   SYMBOL    DATA     CHAR      offset
+      0000003BH   SYMBOL    DATA     ---       led
+      0000003EH   SYMBOL    DATA     CHAR      offset
       01000401H   BLOCK     CODE     NEAR LAB  LVL=3
-      0000003EH   SYMBOL    DATA     CHAR      t
+      0000003FH   SYMBOL    DATA     CHAR      t
       ---         BLOCKEND  ---      ---       LVL=3
       ---         BLOCKEND  ---      ---       LVL=2
       ---         BLOCKEND  ---      ---       LVL=1
-      010002A0H   LINE      CODE     ---       #32
-      010002A0H   LINE      CODE     ---       #33
-      010002A0H   LINE      CODE     ---       #35
-      010002B1H   LINE      CODE     ---       #36
-      010002C1H   LINE      CODE     ---       #37
-      010002C3H   LINE      CODE     ---       #39
-      010002C6H   LINE      CODE     ---       #40
-      010002D9H   LINE      CODE     ---       #41
-      010002DEH   LINE      CODE     ---       #42
-      010002EDH   LINE      CODE     ---       #43
-      010002F2H   LINE      CODE     ---       #44
-      010002F2H   LINE      CODE     ---       #45
-      01000303H   LINE      CODE     ---       #46
-      0100030BH   LINE      CODE     ---       #47
-      01000348H   LINE      CODE     ---       #50
-      01000357H   LINE      CODE     ---       #51
-      0100036AH   LINE      CODE     ---       #52
-      01000375H   LINE      CODE     ---       #53
-      01000387H   LINE      CODE     ---       #54
-      01000396H   LINE      CODE     ---       #55
-      0100039EH   LINE      CODE     ---       #56
-      010003B0H   LINE      CODE     ---       #57
-      010003B4H   LINE      CODE     ---       #59
-      010003BFH   LINE      CODE     ---       #60
-      010003C1H   LINE      CODE     ---       #61
-      010003CFH   LINE      CODE     ---       #62
-      010003E1H   LINE      CODE     ---       #63
-      010003E8H   LINE      CODE     ---       #65
-      010003F3H   LINE      CODE     ---       #66
-      010003F3H   LINE      CODE     ---       #67
-      01000401H   LINE      CODE     ---       #69
-      0100040BH   LINE      CODE     ---       #70
-      01000428H   LINE      CODE     ---       #71
-      01000428H   LINE      CODE     ---       #73
-      0100045EH   LINE      CODE     ---       #74
-      01000463H   LINE      CODE     ---       #76
-      01000466H   LINE      CODE     ---       #77
-      01000468H   LINE      CODE     ---       #78
-      01000476H   LINE      CODE     ---       #79
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 39
+      010002A0H   LINE      CODE     ---       #38
+      010002A0H   LINE      CODE     ---       #39
+      010002A0H   LINE      CODE     ---       #41
+      010002B1H   LINE      CODE     ---       #42
+      010002C1H   LINE      CODE     ---       #43
+      010002C3H   LINE      CODE     ---       #45
+      010002C6H   LINE      CODE     ---       #46
+      010002D9H   LINE      CODE     ---       #47
+      010002DEH   LINE      CODE     ---       #48
+      010002EDH   LINE      CODE     ---       #49
+      010002F2H   LINE      CODE     ---       #50
+      010002F2H   LINE      CODE     ---       #51
+      01000303H   LINE      CODE     ---       #52
+      0100030BH   LINE      CODE     ---       #53
+      01000348H   LINE      CODE     ---       #56
+      01000357H   LINE      CODE     ---       #57
+      0100036AH   LINE      CODE     ---       #58
+      01000375H   LINE      CODE     ---       #59
+      01000387H   LINE      CODE     ---       #60
+      01000396H   LINE      CODE     ---       #61
+      0100039EH   LINE      CODE     ---       #62
+      010003B0H   LINE      CODE     ---       #63
+      010003B4H   LINE      CODE     ---       #65
+      010003BFH   LINE      CODE     ---       #66
+      010003C1H   LINE      CODE     ---       #67
+      010003CFH   LINE      CODE     ---       #68
+      010003E1H   LINE      CODE     ---       #69
+      010003E8H   LINE      CODE     ---       #71
+      010003F3H   LINE      CODE     ---       #72
+      010003F3H   LINE      CODE     ---       #73
+      01000401H   LINE      CODE     ---       #75
+      0100040BH   LINE      CODE     ---       #76
+      01000428H   LINE      CODE     ---       #77
+      01000428H   LINE      CODE     ---       #79
+      01000435H   LINE      CODE     ---       #80
+      01000441H   LINE      CODE     ---       #81
+      0100045FH   LINE      CODE     ---       #82
+      01000464H   LINE      CODE     ---       #84
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 39
 
 
-      01000489H   LINE      CODE     ---       #80
-      0100048FH   LINE      CODE     ---       #81
-      0100048FH   LINE      CODE     ---       #82
+      01000467H   LINE      CODE     ---       #85
+      01000469H   LINE      CODE     ---       #86
+      01000477H   LINE      CODE     ---       #87
+      0100048AH   LINE      CODE     ---       #88
+      01000490H   LINE      CODE     ---       #89
+      01000490H   LINE      CODE     ---       #90
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       GEN
-      01000AC8H   PUBLIC    CONST    ---       ambient_scale
-      010009C8H   PUBLIC    CONST    ---       brightness_curve
-      010008F2H   PUBLIC    CODE     ---       _setBrightnessLevel
-      01000985H   PUBLIC    CODE     ---       getRAW_Ambient
-      01000916H   PUBLIC    CODE     ---       rand
-      010009C3H   PUBLIC    CODE     ---       _rand_set
+      01000AC9H   PUBLIC    CONST    ---       ambient_scale
+      010009C9H   PUBLIC    CONST    ---       brightness_curve
+      010008F3H   PUBLIC    CODE     ---       _setBrightnessLevel
+      01000986H   PUBLIC    CODE     ---       getRAW_Ambient
+      01000917H   PUBLIC    CODE     ---       rand
+      010009C4H   PUBLIC    CODE     ---       _rand_set
       00000020H.2 PUBLIC    BIT      BIT       ?_set_pwm?BIT
-      01000490H   PUBLIC    CODE     ---       _set_pwm
-      010007B3H   PUBLIC    CODE     ---       _delay_ms
+      01000491H   PUBLIC    CODE     ---       _set_pwm
+      010007B4H   PUBLIC    CODE     ---       _delay_ms
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
       000000D0H.2 SFRSYM    DATA     BIT       PSW_OV
@@ -2531,12 +2534,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000EDH   SFRSYM    DATA     BYTE      EIP2
       00000098H.2 SFRSYM    DATA     BIT       SCON0_RB8
       000000CAH   SFRSYM    DATA     BYTE      TMR2RLL
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 40
+
+
       000000FCH   SFRSYM    DATA     BYTE      PCA0CPH0
       00000092H   SFRSYM    DATA     BYTE      TMR3RLL
       000000EAH   SFRSYM    DATA     BYTE      PCA0CPH1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 40
-
-
       00000098H.3 SFRSYM    DATA     BIT       SCON0_TB8
       000000F0H.0 SFRSYM    DATA     BIT       B_B0
       00000082H   SFRSYM    DATA     WORD      DP
@@ -2596,12 +2599,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000B6H   SFRSYM    DATA     BYTE      CLU2CF
       000000A6H   SFRSYM    DATA     BYTE      CKCON1
       000000C8H.2 SFRSYM    DATA     BIT       TMR2CN0_TR2
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 41
+
+
       000000E0H.2 SFRSYM    DATA     BIT       ACC_ACC2
       000000B9H   SFRSYM    DATA     BYTE      PWMCPUDL2
       000000BFH   SFRSYM    DATA     BYTE      CLU3CF
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 41
-
-
       000000E0H.3 SFRSYM    DATA     BIT       ACC_ACC3
       00000081H   SFRSYM    DATA     BYTE      SP
       000000E0H.4 SFRSYM    DATA     BIT       ACC_ACC4
@@ -2661,12 +2664,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000D1H   SFRSYM    DATA     BYTE      CLOUT0
       000000C0H.0 SFRSYM    DATA     BIT       TMR5CN0_T5XCLK0
       000000A8H.5 SFRSYM    DATA     BIT       IE_ET2
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 42
+
+
       000000B5H   SFRSYM    DATA     WORD      PWMCP1
       000000D5H   SFRSYM    DATA     BYTE      P1SKIP
       000000C0H.1 SFRSYM    DATA     BIT       TMR5CN0_T5XCLK1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 42
-
-
       000000BDH   SFRSYM    DATA     WORD      PWMCP2
       00000084H   SFRSYM    DATA     BYTE      CLU0MX
       000000E8H   SFRSYM    DATA     BYTE      ADC0CN0
@@ -2726,12 +2729,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000ABH   SFRSYM    DATA     WORD      PWMCPUD0
       000000C6H   SFRSYM    DATA     BYTE      CLEN0
       00000088H.1 SFRSYM    DATA     BIT       TCON_IE0
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 43
+
+
       000000A0H.0 SFRSYM    DATA     BIT       P2_B0
       00000090H.1 SFRSYM    DATA     BIT       P1_B1
       00000080H.2 SFRSYM    DATA     BIT       P0_B2
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 43
-
-
       000000B2H   SFRSYM    DATA     WORD      PWMCPUD1
       00000088H.3 SFRSYM    DATA     BIT       TCON_IE1
       00000090H.2 SFRSYM    DATA     BIT       P1_B2
@@ -2791,12 +2794,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C0H.6 SFRSYM    DATA     BIT       TMR5CN0_TF5L
       000000E8H.2 SFRSYM    DATA     BIT       ADC0CN0_ADGN1
       000000C8H   SFRSYM    DATA     BYTE      TMR2CN0
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 44
+
+
       000000E3H   SFRSYM    DATA     BYTE      PWMCKDIV
       00000091H   SFRSYM    DATA     BYTE      TMR3CN0
       000000FDH   SFRSYM    DATA     BYTE      TMR2CN1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 44
-
-
       00000098H   SFRSYM    DATA     BYTE      TMR4CN0
       000000FEH   SFRSYM    DATA     BYTE      TMR3CN1
       000000C0H   SFRSYM    DATA     BYTE      TMR5CN0
@@ -2849,119 +2852,119 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000E8H.6 SFRSYM    DATA     BIT       CLIF0_C3FIF
       000000CCH   SFRSYM    DATA     BYTE      HFO0TRIM0
       000000B7H   SFRSYM    DATA     BYTE      FLKEY
-      00000044H   SYMBOL    DATA     WORD      seed
+      00000045H   SYMBOL    DATA     WORD      seed
 
-      010007B3H   BLOCK     CODE     ---       LVL=0
+      010007B4H   BLOCK     CODE     ---       LVL=0
       00000082H   SYMBOL    DATA     WORD      ms
-      010007B7H   BLOCK     CODE     NEAR LAB  LVL=1
+      010007B8H   BLOCK     CODE     NEAR LAB  LVL=1
       00000039H   SYMBOL    DATA     WORD      start
       0000003BH   SYMBOL    DATA     WORD      elapsed
-      010007D0H   BLOCK     CODE     NEAR LAB  LVL=2
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 45
+
+
+      010007D1H   BLOCK     CODE     NEAR LAB  LVL=2
       0000003DH   SYMBOL    DATA     WORD      now
       ---         BLOCKEND  ---      ---       LVL=2
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 45
-
-
       ---         BLOCKEND  ---      ---       LVL=1
-      010007B3H   LINE      CODE     ---       #4
-      010007B7H   LINE      CODE     ---       #5
-      010007B7H   LINE      CODE     ---       #8
-      010007C2H   LINE      CODE     ---       #9
-      010007C9H   LINE      CODE     ---       #10
-      010007D0H   LINE      CODE     ---       #12
-      010007D0H   LINE      CODE     ---       #13
-      010007D7H   LINE      CODE     ---       #14
-      010007DEH   LINE      CODE     ---       #17
-      010007EBH   LINE      CODE     ---       #18
-      010007FDH   LINE      CODE     ---       #20
-      01000805H   LINE      CODE     ---       #21
-      01000807H   LINE      CODE     ---       #22
+      010007B4H   LINE      CODE     ---       #4
+      010007B8H   LINE      CODE     ---       #5
+      010007B8H   LINE      CODE     ---       #8
+      010007C3H   LINE      CODE     ---       #9
+      010007CAH   LINE      CODE     ---       #10
+      010007D1H   LINE      CODE     ---       #12
+      010007D1H   LINE      CODE     ---       #13
+      010007D8H   LINE      CODE     ---       #14
+      010007DFH   LINE      CODE     ---       #17
+      010007ECH   LINE      CODE     ---       #18
+      010007FEH   LINE      CODE     ---       #20
+      01000806H   LINE      CODE     ---       #21
+      01000808H   LINE      CODE     ---       #22
       ---         BLOCKEND  ---      ---       LVL=0
 
-      01000490H   BLOCK     CODE     ---       LVL=0
-      0000003FH   SYMBOL    DATA     BYTE      ch
+      01000491H   BLOCK     CODE     ---       LVL=0
+      00000040H   SYMBOL    DATA     BYTE      ch
       00000004H   SYMBOL    DATA     WORD      val
       00000020H.2 SYMBOL    BIT      BIT       apply_brightness
-      01000490H   LINE      CODE     ---       #24
-      01000492H   LINE      CODE     ---       #25
-      01000495H   LINE      CODE     ---       #26
-      010004AAH   LINE      CODE     ---       #27
-      010004AAH   LINE      CODE     ---       #29
-      010004ACH   LINE      CODE     ---       #30
-      010004B8H   LINE      CODE     ---       #31
-      010004BAH   LINE      CODE     ---       #32
-      010004C7H   LINE      CODE     ---       #34
-      010004C7H   LINE      CODE     ---       #35
-      010004CAH   LINE      CODE     ---       #36
-      010004D1H   LINE      CODE     ---       #37
-      010004DBH   LINE      CODE     ---       #38
-      010004E5H   LINE      CODE     ---       #39
-      010004ECH   LINE      CODE     ---       #40
-      010004ECH   LINE      CODE     ---       #41
-      010004EEH   LINE      CODE     ---       #42
-      010004EEH   LINE      CODE     ---       #43
-      010004F1H   LINE      CODE     ---       #44
-      010004F8H   LINE      CODE     ---       #45
-      01000502H   LINE      CODE     ---       #46
-      0100050CH   LINE      CODE     ---       #47
-      01000513H   LINE      CODE     ---       #48
-      01000513H   LINE      CODE     ---       #49
-      01000515H   LINE      CODE     ---       #50
-      01000515H   LINE      CODE     ---       #51
-      01000518H   LINE      CODE     ---       #52
-      0100051FH   LINE      CODE     ---       #53
-      01000529H   LINE      CODE     ---       #54
-      01000533H   LINE      CODE     ---       #55
-      0100053AH   LINE      CODE     ---       #56
-      0100053DH   LINE      CODE     ---       #57
-      0100053DH   LINE      CODE     ---       #58
-      0100053DH   LINE      CODE     ---       #59
+      01000491H   LINE      CODE     ---       #24
+      01000493H   LINE      CODE     ---       #25
+      01000496H   LINE      CODE     ---       #26
+      010004ABH   LINE      CODE     ---       #27
+      010004ABH   LINE      CODE     ---       #29
+      010004ADH   LINE      CODE     ---       #30
+      010004B9H   LINE      CODE     ---       #31
+      010004BBH   LINE      CODE     ---       #32
+      010004C8H   LINE      CODE     ---       #34
+      010004C8H   LINE      CODE     ---       #35
+      010004CBH   LINE      CODE     ---       #36
+      010004D2H   LINE      CODE     ---       #37
+      010004DCH   LINE      CODE     ---       #38
+      010004E6H   LINE      CODE     ---       #39
+      010004EDH   LINE      CODE     ---       #40
+      010004EDH   LINE      CODE     ---       #41
+      010004EFH   LINE      CODE     ---       #42
+      010004EFH   LINE      CODE     ---       #43
+      010004F2H   LINE      CODE     ---       #44
+      010004F9H   LINE      CODE     ---       #45
+      01000503H   LINE      CODE     ---       #46
+      0100050DH   LINE      CODE     ---       #47
+      01000514H   LINE      CODE     ---       #48
+      01000514H   LINE      CODE     ---       #49
+      01000516H   LINE      CODE     ---       #50
+      01000516H   LINE      CODE     ---       #51
+      01000519H   LINE      CODE     ---       #52
+      01000520H   LINE      CODE     ---       #53
+      0100052AH   LINE      CODE     ---       #54
+      01000534H   LINE      CODE     ---       #55
+      0100053BH   LINE      CODE     ---       #56
+      0100053EH   LINE      CODE     ---       #57
+      0100053EH   LINE      CODE     ---       #58
+      0100053EH   LINE      CODE     ---       #59
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010009C3H   BLOCK     CODE     ---       LVL=0
+      010009C4H   BLOCK     CODE     ---       LVL=0
       00000006H   SYMBOL    DATA     WORD      seedval
-      010009C3H   LINE      CODE     ---       #62
-      010009C3H   LINE      CODE     ---       #63
-      010009C7H   LINE      CODE     ---       #64
-      ---         BLOCKEND  ---      ---       LVL=0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 46
+      010009C4H   LINE      CODE     ---       #62
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 46
 
 
-
-      01000916H   BLOCK     CODE     ---       LVL=0
-      01000916H   LINE      CODE     ---       #67
-      01000916H   LINE      CODE     ---       #68
-      0100092CH   LINE      CODE     ---       #69
-      0100092DH   LINE      CODE     ---       #70
+      010009C4H   LINE      CODE     ---       #63
+      010009C8H   LINE      CODE     ---       #64
       ---         BLOCKEND  ---      ---       LVL=0
 
-      01000985H   BLOCK     CODE     ---       LVL=0
-      01000985H   BLOCK     CODE     NEAR LAB  LVL=1
+      01000917H   BLOCK     CODE     ---       LVL=0
+      01000917H   LINE      CODE     ---       #67
+      01000917H   LINE      CODE     ---       #68
+      0100092DH   LINE      CODE     ---       #69
+      0100092EH   LINE      CODE     ---       #70
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000986H   BLOCK     CODE     ---       LVL=0
+      01000986H   BLOCK     CODE     NEAR LAB  LVL=1
       00000006H   SYMBOL    DATA     WORD      adcraw
       ---         BLOCKEND  ---      ---       LVL=1
-      01000985H   LINE      CODE     ---       #72
-      01000985H   LINE      CODE     ---       #74
-      01000987H   LINE      CODE     ---       #75
-      0100098AH   LINE      CODE     ---       #76
-      0100098EH   LINE      CODE     ---       #77
-      01000990H   LINE      CODE     ---       #78
-      01000990H   LINE      CODE     ---       #79
+      01000986H   LINE      CODE     ---       #72
+      01000986H   LINE      CODE     ---       #74
+      01000988H   LINE      CODE     ---       #75
+      0100098BH   LINE      CODE     ---       #76
+      0100098FH   LINE      CODE     ---       #77
+      01000991H   LINE      CODE     ---       #78
+      01000991H   LINE      CODE     ---       #79
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010008F2H   BLOCK     CODE     ---       LVL=0
+      010008F3H   BLOCK     CODE     ---       LVL=0
       00000007H   SYMBOL    DATA     BYTE      level
-      010008F2H   LINE      CODE     ---       #107
-      010008F2H   LINE      CODE     ---       #108
-      010008FEH   LINE      CODE     ---       #109
-      01000900H   LINE      CODE     ---       #110
-      01000915H   LINE      CODE     ---       #111
+      010008F3H   LINE      CODE     ---       #107
+      010008F3H   LINE      CODE     ---       #108
+      010008FFH   LINE      CODE     ---       #109
+      01000901H   LINE      CODE     ---       #110
+      01000916H   LINE      CODE     ---       #111
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       BUTTON
-      00000042H   PUBLIC    DATA     WORD      press_duration
-      00000041H   PUBLIC    DATA     BYTE      debounce_counter
-      00000040H   PUBLIC    DATA     BYTE      button_state
-      01000751H   PUBLIC    CODE     ---       process_button
+      00000043H   PUBLIC    DATA     WORD      press_duration
+      00000042H   PUBLIC    DATA     BYTE      debounce_counter
+      00000041H   PUBLIC    DATA     BYTE      button_state
+      01000752H   PUBLIC    CODE     ---       process_button
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
       000000D0H.2 SFRSYM    DATA     BIT       PSW_OV
@@ -2986,12 +2989,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000E8H.5 SFRSYM    DATA     BIT       CLIF0_C2RIF
       000000BDH   SFRSYM    DATA     BYTE      PWMCPL2
       0000008FH   SFRSYM    DATA     BYTE      PSCTL
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 47
+
+
       000000E8H.7 SFRSYM    DATA     BIT       CLIF0_C3RIF
       000000E4H   SFRSYM    DATA     BYTE      IT01CF
       000000C0H.6 SFRSYM    DATA     BIT       SMB0CN0_TXMODE
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 47
-
-
       000000E2H   SFRSYM    DATA     BYTE      PWMDTINLIM
       000000ADH   SFRSYM    DATA     BYTE      DERIVID
       000000A7H   SFRSYM    DATA     BYTE      SFRPAGE
@@ -3051,12 +3054,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000080H.3 SFRSYM    DATA     BIT       PIN_LED
       000000E2H   SFRSYM    DATA     BYTE      XBR1
       000000BAH   SFRSYM    DATA     BYTE      PWMCPUDH2
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 48
+
+
       000000C1H   SFRSYM    DATA     BYTE      PFE0CN
       000000E7H   SFRSYM    DATA     BYTE      EMI0CN
       000000C0H.5 SFRSYM    DATA     BIT       SMB0CN0_STA
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 48
-
-
       000000E3H   SFRSYM    DATA     BYTE      XBR2
       000000B1H   SFRSYM    DATA     BYTE      CLU0CF
       000000BBH   SFRSYM    DATA     BYTE      ADC0MX
@@ -3116,12 +3119,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000D2H   SFRSYM    DATA     BYTE      CRC0ST
       000000F8H.4 SFRSYM    DATA     BIT       SPI0CN0_RXOVRN
       000000D0H.4 SFRSYM    DATA     BIT       PSW_RS1
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 49
+
+
       00000080H.6 SFRSYM    DATA     BIT       PIN_BUT
       000000C8H.0 SFRSYM    DATA     BIT       TMR2CN0_T2XCLK0
       000000B9H   SFRSYM    DATA     BYTE      ADC0CF1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 49
-
-
       000000C8H.1 SFRSYM    DATA     BIT       TMR2CN0_T2XCLK1
       000000E8H.7 SFRSYM    DATA     BIT       ADC0CN0_ADEN
       00000089H   SFRSYM    DATA     BYTE      TMOD
@@ -3181,12 +3184,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000FAH   SFRSYM    DATA     BYTE      PCA0H
       000000B8H.1 SFRSYM    DATA     BIT       IP_PT0
       000000C7H   SFRSYM    DATA     BYTE      CLIE0
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 50
+
+
       000000B8H.3 SFRSYM    DATA     BIT       IP_PT1
       000000B5H   SFRSYM    DATA     WORD      ADC0ASA
       000000E8H   SFRSYM    DATA     BYTE      CLIF0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 50
-
-
       000000C0H.2 SFRSYM    DATA     BIT       SMB0CN0_ARBLOST
       000000B8H.5 SFRSYM    DATA     BIT       IP_PT2
       0000008AH   SFRSYM    DATA     BYTE      TL0
@@ -3246,12 +3249,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000C6H   SFRSYM    DATA     BYTE      ADC0LTH
       00000088H.0 SFRSYM    DATA     BIT       TCON_IT0
       000000EFH   SFRSYM    DATA     BYTE      RSTSRC
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 51
+
+
       000000FDH   SFRSYM    DATA     BYTE      P0MAT
       000000CBH   SFRSYM    DATA     BYTE      CRC0DAT
       000000C0H.7 SFRSYM    DATA     BIT       TMR5CN0_TF5H
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 51
-
-
       000000C0H.3 SFRSYM    DATA     BIT       TMR5CN0_T5SPLIT
       00000088H.2 SFRSYM    DATA     BIT       TCON_IT1
       000000D7H   SFRSYM    DATA     BYTE      SFRSTACK
@@ -3311,12 +3314,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000F8H.3 SFRSYM    DATA     BIT       SPI0CN0_NSSMD1
       000000BDH   SFRSYM    DATA     WORD      ADC0
       000000D1H   SFRSYM    DATA     BYTE      PWMCFG2
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 52
+
+
       000000E8H.0 SFRSYM    DATA     BIT       CLIF0_C0FIF
       000000DFH   SFRSYM    DATA     BYTE      PWMCFG3
       00000098H.5 SFRSYM    DATA     BIT       TMR4CN0_TF4LEN
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 52
-
-
       000000E8H.2 SFRSYM    DATA     BIT       CLIF0_C1FIF
       000000D0H   SFRSYM    DATA     BYTE      PSW
       000000F7H   SFRSYM    DATA     BYTE      PCA0PWM
@@ -3328,60 +3331,60 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000CCH   SFRSYM    DATA     BYTE      HFO0TRIM0
       000000B7H   SFRSYM    DATA     BYTE      FLKEY
 
-      01000751H   BLOCK     CODE     ---       LVL=0
-      01000751H   LINE      CODE     ---       #16
-      01000751H   LINE      CODE     ---       #17
-      01000760H   LINE      CODE     ---       #18
-      01000760H   LINE      CODE     ---       #19
-      01000763H   LINE      CODE     ---       #20
-      01000766H   LINE      CODE     ---       #21
-      01000769H   LINE      CODE     ---       #22
-      01000769H   LINE      CODE     ---       #23
-      0100076AH   LINE      CODE     ---       #25
-      0100076AH   LINE      CODE     ---       #26
-      01000775H   LINE      CODE     ---       #27
-      01000777H   LINE      CODE     ---       #28
-      01000778H   LINE      CODE     ---       #29
-      0100077BH   LINE      CODE     ---       #30
-      0100077EH   LINE      CODE     ---       #31
-      01000783H   LINE      CODE     ---       #32
-      01000786H   LINE      CODE     ---       #33
-      01000787H   LINE      CODE     ---       #39
-      01000787H   LINE      CODE     ---       #40
-      0100078AH   LINE      CODE     ---       #41
-      01000795H   LINE      CODE     ---       #42
-      0100079DH   LINE      CODE     ---       #43
-      0100079EH   LINE      CODE     ---       #45
-      010007A1H   LINE      CODE     ---       #46
-      010007A3H   LINE      CODE     ---       #47
-      010007A6H   LINE      CODE     ---       #48
-      010007A6H   LINE      CODE     ---       #49
-      010007A7H   LINE      CODE     ---       #51
-      010007AAH   LINE      CODE     ---       #52
-      010007AAH   LINE      CODE     ---       #53
-      010007AAH   LINE      CODE     ---       #54
-      010007ACH   LINE      CODE     ---       #56
-      010007ACH   LINE      CODE     ---       #57
-      010007AFH   LINE      CODE     ---       #58
-      010007B2H   LINE      CODE     ---       #59
-      010007B2H   LINE      CODE     ---       #60
-      010007B2H   LINE      CODE     ---       #61
-      010007B2H   LINE      CODE     ---       #62
+      01000752H   BLOCK     CODE     ---       LVL=0
+      01000752H   LINE      CODE     ---       #16
+      01000752H   LINE      CODE     ---       #17
+      01000761H   LINE      CODE     ---       #18
+      01000761H   LINE      CODE     ---       #19
+      01000764H   LINE      CODE     ---       #20
+      01000767H   LINE      CODE     ---       #21
+      0100076AH   LINE      CODE     ---       #22
+      0100076AH   LINE      CODE     ---       #23
+      0100076BH   LINE      CODE     ---       #25
+      0100076BH   LINE      CODE     ---       #26
+      01000776H   LINE      CODE     ---       #27
+      01000778H   LINE      CODE     ---       #28
+      01000779H   LINE      CODE     ---       #29
+      0100077CH   LINE      CODE     ---       #30
+      0100077FH   LINE      CODE     ---       #31
+      01000784H   LINE      CODE     ---       #32
+      01000787H   LINE      CODE     ---       #33
+      01000788H   LINE      CODE     ---       #39
+      01000788H   LINE      CODE     ---       #40
+      0100078BH   LINE      CODE     ---       #41
+      01000796H   LINE      CODE     ---       #42
+      0100079EH   LINE      CODE     ---       #43
+      0100079FH   LINE      CODE     ---       #45
+      010007A2H   LINE      CODE     ---       #46
+      010007A4H   LINE      CODE     ---       #47
+      010007A7H   LINE      CODE     ---       #48
+      010007A7H   LINE      CODE     ---       #49
+      010007A8H   LINE      CODE     ---       #51
+      010007ABH   LINE      CODE     ---       #52
+      010007ABH   LINE      CODE     ---       #53
+      010007ABH   LINE      CODE     ---       #54
+      010007ADH   LINE      CODE     ---       #56
+      010007ADH   LINE      CODE     ---       #57
+      010007B0H   LINE      CODE     ---       #58
+      010007B3H   LINE      CODE     ---       #59
+      010007B3H   LINE      CODE     ---       #60
+      010007B3H   LINE      CODE     ---       #61
+      010007B3H   LINE      CODE     ---       #62
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       PWM
       00000018H   PUBLIC    DATA     ---       pwm_fade_step
-      01000668H   PUBLIC    CODE     ---       process_fadeout
-      01000808H   PUBLIC    CODE     ---       start_poweroff_sequence
+      01000669H   PUBLIC    CODE     ---       process_fadeout
+      01000809H   PUBLIC    CODE     ---       start_poweroff_sequence
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
       000000D0H.2 SFRSYM    DATA     BIT       PSW_OV
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 53
+
+
       00000090H   SFRSYM    DATA     BYTE      P1
       000000F8H.1 SFRSYM    DATA     BIT       SPI0CN0_TXNF
       00000097H   SFRSYM    DATA     BYTE      WDTCN
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 53
-
-
       0000009AH   SFRSYM    DATA     BYTE      PWMCPH0
       000000A0H   SFRSYM    DATA     BYTE      P2
       000000B6H   SFRSYM    DATA     BYTE      PWMCPH1
@@ -3441,12 +3444,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000F0H.4 SFRSYM    DATA     BIT       B_B4
       000000DBH   SFRSYM    DATA     BYTE      PCA0CPM1
       000000EBH   SFRSYM    DATA     BYTE      PCA0CPL2
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 54
+
+
       000000A1H   SFRSYM    DATA     BYTE      ADC0ASCF
       000000B6H   SFRSYM    DATA     BYTE      ADC0ASAH
       000000F0H.5 SFRSYM    DATA     BIT       B_B5
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 54
-
-
       000000E8H.6 SFRSYM    DATA     BIT       ADC0CN0_IPOEN
       000000E8H.0 SFRSYM    DATA     BIT       ADC0CN0_TEMPE
       000000DCH   SFRSYM    DATA     BYTE      PCA0CPM2
@@ -3506,12 +3509,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000094H   SFRSYM    DATA     WORD      TMR3
       0000009BH   SFRSYM    DATA     BYTE      SPI0FCN1
       000000C0H.2 SFRSYM    DATA     BIT       TMR5CN0_TR5
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 55
+
+
       000000A4H   SFRSYM    DATA     WORD      TMR4
       000000D4H   SFRSYM    DATA     WORD      TMR5
       000000C0H.3 SFRSYM    DATA     BIT       SMB0CN0_ACKRQ
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 55
-
-
       000000F1H   SFRSYM    DATA     BYTE      P0MDIN
       000000AFH   SFRSYM    DATA     BYTE      CLU0FN
       00000098H.4 SFRSYM    DATA     BIT       SCON0_REN
@@ -3571,12 +3574,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000A9H   SFRSYM    DATA     BYTE      CLKSEL
       000000F8H.0 SFRSYM    DATA     BIT       SPI0CN0_SPIEN
       000000C3H   SFRSYM    DATA     BYTE      PWML
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 56
+
+
       000000F0H   SFRSYM    DATA     BYTE      B
       000000BEH   SFRSYM    DATA     BYTE      ADC0H
       000000CAH   SFRSYM    DATA     WORD      TMR2RL
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 56
-
-
       000000BDH   SFRSYM    DATA     BYTE      ADC0L
       00000092H   SFRSYM    DATA     WORD      TMR3RL
       000000A2H   SFRSYM    DATA     WORD      TMR4RL
@@ -3636,12 +3639,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       0000009BH   SFRSYM    DATA     BYTE      PWMSTATUS
       00000083H   SFRSYM    DATA     BYTE      DPH
       000000C4H   SFRSYM    DATA     BYTE      ADC0GTH
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 57
+
+
       000000C8H.7 SFRSYM    DATA     BIT       TMR2CN0_TF2H
       000000C8H.3 SFRSYM    DATA     BIT       TMR2CN0_T2SPLIT
       000000D0H.6 SFRSYM    DATA     BIT       PSW_AC
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 57
-
-
       000000F8H   SFRSYM    DATA     BYTE      SPI0CN0
       000000D6H   SFRSYM    DATA     BYTE      HFO0CAL
       00000088H.5 SFRSYM    DATA     BIT       TCON_TF0
@@ -3701,12 +3704,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000098H.4 SFRSYM    DATA     BIT       TMR4CN0_TF4CEN
       000000D5H   SFRSYM    DATA     BYTE      TMR5H
       000000EFH   SFRSYM    DATA     BYTE      SMB0FCT
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 58
+
+
       00000096H   SFRSYM    DATA     BYTE      PCA0POL
       000000CEH   SFRSYM    DATA     BYTE      TMR2L
       000000C0H.4 SFRSYM    DATA     BIT       TMR5CN0_TF5CEN
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 58
-
-
       000000F8H.7 SFRSYM    DATA     BIT       SPI0CN0_SPIF
       00000094H   SFRSYM    DATA     BYTE      TMR3L
       000000A8H.7 SFRSYM    DATA     BIT       IE_EA
@@ -3739,55 +3742,55 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000CCH   SFRSYM    DATA     BYTE      HFO0TRIM0
       000000B7H   SFRSYM    DATA     BYTE      FLKEY
 
-      01000808H   BLOCK     CODE     ---       LVL=0
-      01000808H   BLOCK     CODE     NEAR LAB  LVL=1
+      01000809H   BLOCK     CODE     ---       LVL=0
+      01000809H   BLOCK     CODE     NEAR LAB  LVL=1
       00000003H   SYMBOL    DATA     BYTE      i
-      01000814H   BLOCK     CODE     NEAR LAB  LVL=2
+      01000815H   BLOCK     CODE     NEAR LAB  LVL=2
       00000039H   SYMBOL    DATA     WORD      current_pwm
       ---         BLOCKEND  ---      ---       LVL=2
       ---         BLOCKEND  ---      ---       LVL=1
-      01000808H   LINE      CODE     ---       #15
-      01000808H   LINE      CODE     ---       #17
-      01000814H   LINE      CODE     ---       #18
-      01000821H   LINE      CODE     ---       #19
-      01000836H   LINE      CODE     ---       #20
-      0100084EH   LINE      CODE     ---       #21
-      01000859H   LINE      CODE     ---       #22
-      01000859H   LINE      CODE     ---       #23
-      0100085CH   LINE      CODE     ---       #24
+      01000809H   LINE      CODE     ---       #15
+      01000809H   LINE      CODE     ---       #17
+      01000815H   LINE      CODE     ---       #18
+      01000822H   LINE      CODE     ---       #19
+      01000837H   LINE      CODE     ---       #20
+      0100084FH   LINE      CODE     ---       #21
+      0100085AH   LINE      CODE     ---       #22
+      0100085AH   LINE      CODE     ---       #23
+      0100085DH   LINE      CODE     ---       #24
       ---         BLOCKEND  ---      ---       LVL=0
 
-      01000668H   BLOCK     CODE     ---       LVL=0
-      01000668H   BLOCK     CODE     NEAR LAB  LVL=1
+      01000669H   BLOCK     CODE     ---       LVL=0
+      01000669H   BLOCK     CODE     NEAR LAB  LVL=1
       00000020H.1 SYMBOL    BIT      BIT       all_zero
       00000039H   SYMBOL    DATA     BYTE      i
-      01000678H   BLOCK     CODE     NEAR LAB  LVL=2
+      01000679H   BLOCK     CODE     NEAR LAB  LVL=2
       0000003AH   SYMBOL    DATA     WORD      current_pwm
-      0100068FH   BLOCK     CODE     NEAR LAB  LVL=3
+      01000690H   BLOCK     CODE     NEAR LAB  LVL=3
       0000003CH   SYMBOL    DATA     WORD      new_pwm
       ---         BLOCKEND  ---      ---       LVL=3
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 59
+
+
       ---         BLOCKEND  ---      ---       LVL=2
       ---         BLOCKEND  ---      ---       LVL=1
-      01000668H   LINE      CODE     ---       #27
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 59
-
-
-      01000668H   LINE      CODE     ---       #29
-      0100066AH   LINE      CODE     ---       #31
-      01000678H   LINE      CODE     ---       #32
-      01000686H   LINE      CODE     ---       #34
-      0100068FH   LINE      CODE     ---       #35
-      010006B6H   LINE      CODE     ---       #38
-      010006C1H   LINE      CODE     ---       #39
-      010006C1H   LINE      CODE     ---       #41
-      010006D4H   LINE      CODE     ---       #42
-      010006D6H   LINE      CODE     ---       #43
-      010006D6H   LINE      CODE     ---       #44
-      010006DAH   LINE      CODE     ---       #46
-      010006DEH   LINE      CODE     ---       #47
-      010006DFH   LINE      CODE     ---       #48
-      010006DFH   LINE      CODE     ---       #50
-      010006DFH   LINE      CODE     ---       #51
+      01000669H   LINE      CODE     ---       #27
+      01000669H   LINE      CODE     ---       #29
+      0100066BH   LINE      CODE     ---       #31
+      01000679H   LINE      CODE     ---       #32
+      01000687H   LINE      CODE     ---       #34
+      01000690H   LINE      CODE     ---       #35
+      010006B7H   LINE      CODE     ---       #38
+      010006C2H   LINE      CODE     ---       #39
+      010006C2H   LINE      CODE     ---       #41
+      010006D5H   LINE      CODE     ---       #42
+      010006D7H   LINE      CODE     ---       #43
+      010006D7H   LINE      CODE     ---       #44
+      010006DBH   LINE      CODE     ---       #46
+      010006DFH   LINE      CODE     ---       #47
+      010006E0H   LINE      CODE     ---       #48
+      010006E0H   LINE      CODE     ---       #50
+      010006E0H   LINE      CODE     ---       #51
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       STATUS_LED
@@ -3796,7 +3799,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       00000034H   PUBLIC    DATA     BYTE      led_cmd
       00000033H   PUBLIC    DATA     BYTE      init_blink_count
       00000031H   PUBLIC    DATA     WORD      init_blink_timer
-      010006E0H   PUBLIC    CODE     ---       _update_status_led
+      010006E1H   PUBLIC    CODE     ---       _update_status_led
       000000A2H   SFRSYM    DATA     BYTE      SPI0CKR
       00000080H   SFRSYM    DATA     BYTE      P0
       000000D0H.2 SFRSYM    DATA     BIT       PSW_OV
@@ -3831,12 +3834,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000A4H   SFRSYM    DATA     BYTE      P0MDOUT
       000000A5H   SFRSYM    DATA     BYTE      P1MDOUT
       000000E8H.5 SFRSYM    DATA     BIT       ADC0CN0_ADINT
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 60
+
+
       000000CBH   SFRSYM    DATA     BYTE      TMR2RLH
       000000A6H   SFRSYM    DATA     BYTE      P2MDOUT
       000000A8H   SFRSYM    DATA     BYTE      IE
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 60
-
-
       00000093H   SFRSYM    DATA     BYTE      TMR3RLH
       000000A3H   SFRSYM    DATA     BYTE      TMR4RLH
       000000BBH   SFRSYM    DATA     BYTE      EIP1
@@ -3896,12 +3899,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000D1H   SFRSYM    DATA     BYTE      REF0CN
       000000ABH   SFRSYM    DATA     BYTE      PWMCPUDL0
       000000EFH   SFRSYM    DATA     BYTE      HFO0CN
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 61
+
+
       000000B3H   SFRSYM    DATA     BYTE      CLU1CF
       0000008EH   SFRSYM    DATA     BYTE      CKCON0
       000000E0H.1 SFRSYM    DATA     BIT       ACC_ACC1
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 61
-
-
       000000C9H   SFRSYM    DATA     BYTE      REG0CN
       000000C6H   SFRSYM    DATA     BYTE      PWMLIMH
       000000B2H   SFRSYM    DATA     BYTE      PWMCPUDL1
@@ -3961,12 +3964,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000DFH   SFRSYM    DATA     BYTE      ADC0CF2
       000000CFH   SFRSYM    DATA     BYTE      CRC0FLIP
       000000D0H.0 SFRSYM    DATA     BIT       PSW_PARITY
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 62
+
+
       000000A8H.4 SFRSYM    DATA     BIT       IE_ES0
       00000098H.0 SFRSYM    DATA     BIT       TMR4CN0_T4XCLK0
       000000A8H.1 SFRSYM    DATA     BIT       IE_ET0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 62
-
-
       00000098H.1 SFRSYM    DATA     BIT       TMR4CN0_T4XCLK1
       000000A8H.3 SFRSYM    DATA     BIT       IE_ET1
       00000099H   SFRSYM    DATA     WORD      PWMCP0
@@ -4026,12 +4029,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000A8H.6 SFRSYM    DATA     BIT       IE_ESPI0
       0000008BH   SFRSYM    DATA     BYTE      TL1
       000000F9H   SFRSYM    DATA     BYTE      PCA0L
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 63
+
+
       000000C0H.0 SFRSYM    DATA     BIT       SMB0CN0_SI
       000000D0H.1 SFRSYM    DATA     BIT       PSW_F1
       00000080H.0 SFRSYM    DATA     BIT       P0_B0
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 63
-
-
       000000B8H.0 SFRSYM    DATA     BIT       IP_PX0
       00000090H.0 SFRSYM    DATA     BIT       P1_B0
       00000080H.1 SFRSYM    DATA     BIT       P0_B1
@@ -4091,12 +4094,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000F6H   SFRSYM    DATA     BYTE      PRTDRV
       000000EDH   SFRSYM    DATA     BYTE      P1MAT
       000000E8H.3 SFRSYM    DATA     BIT       ADC0CN0_ADWINT
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 64
+
+
       00000098H.6 SFRSYM    DATA     BIT       TMR4CN0_TF4L
       000000E8H.4 SFRSYM    DATA     BIT       ADC0CN0_ADBUSY
       000000D6H   SFRSYM    DATA     BYTE      SMB0ADM
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 64
-
-
       000000C5H   SFRSYM    DATA     BYTE      ADC0LTL
       000000F8H.5 SFRSYM    DATA     BIT       SPI0CN0_MODF
       000000B8H.6 SFRSYM    DATA     BIT       IP_PSPI0
@@ -4156,61 +4159,61 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       000000F7H   SFRSYM    DATA     BYTE      SPI0FCT
       000000B6H   SFRSYM    DATA     BYTE      REVID
       000000C0H.5 SFRSYM    DATA     BIT       TMR5CN0_TF5LEN
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 65
+
+
       000000E8H.6 SFRSYM    DATA     BIT       CLIF0_C3FIF
       000000CCH   SFRSYM    DATA     BYTE      HFO0TRIM0
       000000B7H   SFRSYM    DATA     BYTE      FLKEY
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 65
 
-
-
-      010006E0H   BLOCK     CODE     ---       LVL=0
+      010006E1H   BLOCK     CODE     ---       LVL=0
       00000007H   SYMBOL    DATA     BYTE      cmd
-      010006E0H   BLOCK     CODE     NEAR LAB  LVL=1
+      010006E1H   BLOCK     CODE     NEAR LAB  LVL=1
       0000002CH   SYMBOL    DATA     BYTE      init_blink_count
       0000002DH   SYMBOL    DATA     WORD      init_blink_timer
       0000002FH   SYMBOL    DATA     WORD      poweroff_timer
       00000020H.5 SYMBOL    BIT      BIT       poweroff_active
       ---         BLOCKEND  ---      ---       LVL=1
-      010006E0H   LINE      CODE     ---       #20
-      010006E0H   LINE      CODE     ---       #26
-      010006EFH   LINE      CODE     ---       #27
-      010006EFH   LINE      CODE     ---       #28
-      010006F5H   LINE      CODE     ---       #29
-      01000700H   LINE      CODE     ---       #30
-      01000702H   LINE      CODE     ---       #31
-      01000711H   LINE      CODE     ---       #32
-      01000713H   LINE      CODE     ---       #33
-      01000714H   LINE      CODE     ---       #38
-      0100071CH   LINE      CODE     ---       #39
-      0100071CH   LINE      CODE     ---       #40
-      0100071DH   LINE      CODE     ---       #42
-      0100071DH   LINE      CODE     ---       #43
-      0100071FH   LINE      CODE     ---       #44
-      01000720H   LINE      CODE     ---       #46
-      01000720H   LINE      CODE     ---       #47
-      01000723H   LINE      CODE     ---       #48
-      01000728H   LINE      CODE     ---       #49
-      0100072AH   LINE      CODE     ---       #50
-      0100072CH   LINE      CODE     ---       #51
-      0100072DH   LINE      CODE     ---       #52
-      01000735H   LINE      CODE     ---       #53
-      0100073EH   LINE      CODE     ---       #54
-      01000740H   LINE      CODE     ---       #55
-      01000742H   LINE      CODE     ---       #56
-      01000745H   LINE      CODE     ---       #58
-      01000747H   LINE      CODE     ---       #59
-      01000747H   LINE      CODE     ---       #60
-      01000747H   LINE      CODE     ---       #61
-      01000748H   LINE      CODE     ---       #63
-      01000748H   LINE      CODE     ---       #64
-      0100074AH   LINE      CODE     ---       #65
-      0100074DH   LINE      CODE     ---       #66
-      0100074EH   LINE      CODE     ---       #68
-      0100074EH   LINE      CODE     ---       #69
-      0100074EH   LINE      CODE     ---       #70
-      01000750H   LINE      CODE     ---       #71
-      01000750H   LINE      CODE     ---       #72
-      01000750H   LINE      CODE     ---       #73
+      010006E1H   LINE      CODE     ---       #20
+      010006E1H   LINE      CODE     ---       #26
+      010006F0H   LINE      CODE     ---       #27
+      010006F0H   LINE      CODE     ---       #28
+      010006F6H   LINE      CODE     ---       #29
+      01000701H   LINE      CODE     ---       #30
+      01000703H   LINE      CODE     ---       #31
+      01000712H   LINE      CODE     ---       #32
+      01000714H   LINE      CODE     ---       #33
+      01000715H   LINE      CODE     ---       #38
+      0100071DH   LINE      CODE     ---       #39
+      0100071DH   LINE      CODE     ---       #40
+      0100071EH   LINE      CODE     ---       #42
+      0100071EH   LINE      CODE     ---       #43
+      01000720H   LINE      CODE     ---       #44
+      01000721H   LINE      CODE     ---       #46
+      01000721H   LINE      CODE     ---       #47
+      01000724H   LINE      CODE     ---       #48
+      01000729H   LINE      CODE     ---       #49
+      0100072BH   LINE      CODE     ---       #50
+      0100072DH   LINE      CODE     ---       #51
+      0100072EH   LINE      CODE     ---       #52
+      01000736H   LINE      CODE     ---       #53
+      0100073FH   LINE      CODE     ---       #54
+      01000741H   LINE      CODE     ---       #55
+      01000743H   LINE      CODE     ---       #56
+      01000746H   LINE      CODE     ---       #58
+      01000748H   LINE      CODE     ---       #59
+      01000748H   LINE      CODE     ---       #60
+      01000748H   LINE      CODE     ---       #61
+      01000749H   LINE      CODE     ---       #63
+      01000749H   LINE      CODE     ---       #64
+      0100074BH   LINE      CODE     ---       #65
+      0100074EH   LINE      CODE     ---       #66
+      0100074FH   LINE      CODE     ---       #68
+      0100074FH   LINE      CODE     ---       #69
+      0100074FH   LINE      CODE     ---       #70
+      01000751H   LINE      CODE     ---       #71
+      01000751H   LINE      CODE     ---       #72
+      01000751H   LINE      CODE     ---       #73
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       ?C_STARTUP
@@ -4221,12 +4224,12 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
 
       ---         MODULE    ---      ---       ?C?CLDOPTR
       01000077H   PUBLIC    CODE     ---       ?C?CLDOPTR
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/17/2025  16:23:11  PAGE 66
+
+
 
       ---         MODULE    ---      ---       ?C?CILDPTR
       010000A4H   PUBLIC    CODE     ---       ?C?CILDPTR
-LX51 LINKER/LOCATER V4.66.97.0                                                        10/20/2025  19:56:58  PAGE 66
-
-
 
       ---         MODULE    ---      ---       ?C?CILDOPTR
       010000C6H   PUBLIC    CODE     ---       ?C?CILDOPTR
@@ -4253,7 +4256,7 @@ SYMBOL TABLE OF MODULE:  LIGHTCUBE.OMF.CRBUILD (MAIN)
       01000273H   PUBLIC    CODE     ---       ?C?LIMUL
 
       ---         MODULE    ---      ---       ?C_INIT
-      01000623H   PUBLIC    CODE     ---       ?C_START
+      01000624H   PUBLIC    CODE     ---       ?C_START
 
-Program Size: data=71.0 xdata=0 const=276 code=2497
+Program Size: data=72.0 xdata=0 const=276 code=2498
 LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

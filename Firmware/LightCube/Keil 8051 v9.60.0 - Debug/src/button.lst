@@ -1,13 +1,13 @@
-C51 COMPILER V9.60.0.0   BUTTON                                                            10/19/2025 22:03:41 PAGE 1   
+C51 COMPILER V9.60.0.0   BUTTON                                                            11/14/2025 11:34:19 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE BUTTON
 OBJECT MODULE PLACED IN .\src\button.OBJ
-COMPILER INVOKED BY: C:\SiliconLabs\SimplicityStudio\v5_2\developer\toolchains\keil_8051\9.60\BIN\C51.exe C:\src\tennp\g
-                    -it\LightCube\Firmware\LightCube\src\button.c OMF2 SMALL DEBUG OBJECTEXTEND ROM(LARGE) WARNINGLEVEL(2) FLOATFUZZY(3) OPTI
-                    -MIZE(8,SPEED) DEFINE(DEBUG=1) INTVECTOR(0X0000) INTPROMOTE INCDIR(C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdks/80
-                    -51/v4.3.1//Device/EFM8BB50/inc;C:/SiliconLabs/SimplicityStudio/v5_2/developer/sdks/8051/v4.3.1//Device/shared/si8051Base
-                    -) PRINT(.\src\button.lst) COND PAGEWIDTH(120) PAGELENGTH(65) OBJECT(.\src\button.OBJ)
+COMPILER INVOKED BY: C:\SiliconLabs\SimplicityStudio\v5\developer\toolchains\keil_8051\9.60\BIN\C51.exe C:\src\tennp\git
+                    -\LightCube\Firmware\LightCube\src\button.c OMF2 SMALL DEBUG OBJECTEXTEND ROM(LARGE) WARNINGLEVEL(2) FLOATFUZZY(3) OPTIMI
+                    -ZE(8,SPEED) DEFINE(DEBUG=1) INTVECTOR(0X0000) INTPROMOTE INCDIR(C:/SiliconLabs/SimplicityStudio/v5/developer/sdks/8051/v
+                    -4.3.1//Device/EFM8BB50/inc;C:/SiliconLabs/SimplicityStudio/v5/developer/sdks/8051/v4.3.1//Device/shared/si8051Base) PRIN
+                    -T(.\src\button.lst) COND PAGEWIDTH(120) PAGELENGTH(65) OBJECT(.\src\button.OBJ)
 
 line level    source
 
@@ -63,7 +63,7 @@ line level    source
   50   3                      // Released before long press
   51   3                      led_cmd = LED_CMD_SHORTPRESS;
   52   3                      button_state = BUTTON_IDLE;
-C51 COMPILER V9.60.0.0   BUTTON                                                            10/19/2025 22:03:41 PAGE 2   
+C51 COMPILER V9.60.0.0   BUTTON                                                            11/14/2025 11:34:19 PAGE 2   
 
   53   3                  }
   54   2                  break;

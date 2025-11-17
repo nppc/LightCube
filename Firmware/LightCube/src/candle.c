@@ -2,9 +2,15 @@
 #define NUM_LEDS           4
 #define BRIGHTNESS_LEVEL   75
 #define STARTUP_STEP       1
-#define FLICKER_PROB       8
-#define GLOW_EVENT_PROB    16
+#define FLICKER_PROB       8 // Controls probability of starting a flicker event.
+#define GLOW_EVENT_PROB    16 // Controls probability of starting a glow event.
 #define GLOW_RANGE         25
+
+/* Ensure brightness curve index never exceeds MAX_STEPS */
+#if (BRIGHTNESS_LEVEL + GLOW_RANGE + 8) >= MAX_STEPS
+  #error "Configuration error: BRIGHTNESS_LEVEL + GLOW_RANGE + max flicker offset exceeds MAX_STEPS"
+#endif
+
 
 typedef struct {
     unsigned char current_level;
@@ -31,7 +37,7 @@ void candle_init(void)
 
 void candle_tick(void)
 {
-    unsigned char i;
+    unsigned char i, idx;
     for (i = 0; i < NUM_LEDS; ++i) {
         LEDState *led = &leds[i];
         char offset = 0;
@@ -70,7 +76,9 @@ void candle_tick(void)
             led->glow_timer = (rand() & 1) ? t : -t;
         }
 
-        set_pwm(i, brightness_curve[led->current_level + offset], 1);
+        idx = led->current_level + offset;
+        if (idx >= MAX_STEPS) idx = MAX_STEPS - 1;
+        set_pwm(i, brightness_curve[idx], 1);
     }
 
     if (!startup_done) {
